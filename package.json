@@ -1,13 +1,14 @@
 {
-    "name": "site",
-    "version": "1.0.0",
+    "name": "djashton-portfolio",
+    "version": "0.0.1",
     "main": "index.js",
     "license": "MIT",
     "devDependencies": {
         "parcel-bundler": "^1.12.5"
     },
     "scripts": {
-        "start": "parcel index.html"
+        "build": "parcel build ./src/index.html --public-url /dashton.tech/",
+        "dev": "parcel ./src/index.html"
     },
     "dependencies": {
         "@emotion/react": "^11.1.5",
