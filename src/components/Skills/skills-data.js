@@ -6,7 +6,9 @@ import Illustrator from '../../assets/skills/illustrator.svg';
 import JavaScript from '../../assets/skills/js.svg';
 import Photoshop from '../../assets/skills/photoshop.svg';
 import ReactLogo from '../../assets/skills/react.svg';
+import SassLogo from '../../assets/skills/sass.svg';
 import Sketch from '../../assets/skills/sketch.svg';
+import SnapLogo from '../../assets/skills/snapsvg.svg';
 import VSCode from '../../assets/skills/visual-studio-code.svg';
 
 export default [
@@ -53,6 +55,14 @@ export default [
             {
                 label : 'React',
                 logo  : ReactLogo
+            },
+            {
+                label : 'Sass',
+                logo  : SassLogo
+            },
+            {
+                label : 'Snap.svg',
+                logo  : SnapLogo
             },
             {
                 label : 'VS Code',
