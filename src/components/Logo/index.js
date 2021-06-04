@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import LogoImage from '../../assets/logo-da.svg';
 
 const LogoSVG = styled.svg`
-    fill                : Tomato;
+    fill                : var(--colorPrimary);
     margin-right        : 10;
     height              : 40;
     width               : 40;

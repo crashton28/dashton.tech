@@ -18,7 +18,7 @@ const StyledContent = styled(Content)``;
 
 const CategoryLabel = styled.div`
     align-items     : center;
-    background      : tomato;
+    background      : var(--colorPrimary);
     border-radius   : 20px;
     color           : #fff;
     display         : flex;
@@ -60,7 +60,7 @@ const SkillLabel = styled.span`
 
 function Skills() {
     return (
-        <Section title="Skills">
+        <Section name="skills" title="Skills">
             <StyledContent>
             {skillsData.map((cat, idx) => {
                 return (

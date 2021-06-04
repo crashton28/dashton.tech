@@ -4,28 +4,30 @@ import SectionTitle from '../SectionTitle';
 
 const Wrapper = styled.section`
     border-bottom : 1px rgba(0,0,0,.1) solid;
-    padding-top   : var(--contentMargin);
-    &:nth-child(odd) {
-        background : rgba(0,0,0,.02);
-    }
+    padding       : var(--contentMargin);
     &:last-child {
         border-bottom: none;
     }
 `;
 
-const Content = styled.div`
+const InnerWrapper = styled.div`
     margin    : 0 auto;
-    padding   : 0 var(--contentMargin) var(--contentMargin);
     width     : 100%;
+`;
+
+const Anchor = styled.a`
+    position : relative;
+    top : -120;
 `;
 
 function Section(props) {
     return(
-        <Wrapper>
-            <SectionTitle>{props.title}</SectionTitle>
-            <Content>
+        <Wrapper className={props.className}>
+            <Anchor id={props.name} />
+            {props.title && <SectionTitle name={props.name}>{props.title}</SectionTitle>}
+            <InnerWrapper>
                 {props.children}
-            </Content>
+            </InnerWrapper>
         </Wrapper>
     )
 }

@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import Content from '../Content';
+import Section from '../Section';
 
-const Wrapper = styled.div`
+const Wrapper = styled(Section)`
     align-items     : center;
-    background      : tomato;
+    background      : var(--colorPrimary);
     color           : #fff;
     display         : flex;
     font-size       : 24;
@@ -33,7 +34,7 @@ const Center = styled.div`
 
 function ContactInfo(props) {
     return (
-        <Wrapper>
+        <Wrapper name="contact">
             <Content>
                 <Center>
                     <Link href="mailto:me@dashton.tech">me@dashton.tech</Link>

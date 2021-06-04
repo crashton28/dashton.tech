@@ -54,7 +54,7 @@ const EmployerLocation = styled.span`
 `;
 
 const EmploymentPeriod = styled.div`
-    background      : Tomato;
+    background      : var(--colorPrimary);
     border-radius   : 20px;
     border          : 1px rgba(0,0,0,.05) solid;
     color           : #fff;
@@ -126,7 +126,7 @@ const Position = styled.div`
         margin-bottom : 0;
     }
     &:before {
-        background    : Tomato;
+        background    : var(--colorPrimary);
         border-radius : 50%;
         content       : '';
         display       : block;
@@ -155,7 +155,7 @@ const PositionDesc = styled.p`
 function Experience() {
     let orderedJobs = orderBy(jobsData, ['date.from.year','date.from.month'], ['desc','desc']);
     return (
-        <Section title="Work History">
+        <Section name="experience" title="Work History">
             {orderedJobs.map((job, idx) => {
                 let date             = job.date,
                     fromDate         = new Date(`${date.from.year}, ${date.from.month}, 01`),

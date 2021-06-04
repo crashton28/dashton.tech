@@ -1,3 +1,4 @@
+import Emotion from '../../assets/skills/emotion.png';
 import Figma from '../../assets/skills/figma.svg';
 import GitHub from '../../assets/skills/github.svg';
 import GitLab from '../../assets/skills/gitlab.svg';
@@ -9,6 +10,7 @@ import ReactLogo from '../../assets/skills/react.svg';
 import SassLogo from '../../assets/skills/sass.svg';
 import Sketch from '../../assets/skills/sketch.svg';
 import SnapLogo from '../../assets/skills/snapsvg.svg';
+import StyledComponents from '../../assets/skills/styled-components.png';
 import VSCode from '../../assets/skills/visual-studio-code.svg';
 
 export default [
@@ -37,6 +39,10 @@ export default [
         label  : 'Development',
         items : [
             {
+                label : 'Emotion',
+                logo  : Emotion
+            },
+            {
                 label : 'GitHub',
                 logo  : GitHub
             },
@@ -63,6 +69,10 @@ export default [
             {
                 label : 'Snap.svg',
                 logo  : SnapLogo
+            },
+            {
+                label : 'Styled Components',
+                logo  : StyledComponents
             },
             {
                 label : 'VS Code',

@@ -6,7 +6,7 @@ const Header = styled.header`
 `;
 
 const H2 = styled.h2`
-    color          : tomato;
+    color          : var(--colorPrimary);
     font-size      : 1.8rem;
     font-weight    : 400;
     line-height    : 1;
