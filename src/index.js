@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import styled from '@emotion/styled';
 import Header from './components/Header';
@@ -15,17 +15,16 @@ const Wrapper = styled.div`
     --contentMargin : 40px;
 `;
 
-class App extends React.Component{
-    render(){
-        return(
-            <Wrapper>
-                <Header />
-                <Experience />
-                <Skills />
-                <ContactInfo />
-            </Wrapper>
-        )
-    }
+const App = (props) => {
+    const [activeNav, setActiveNav] = useState();
+    return(
+        <Wrapper>
+            <Header activeNav={activeNav}/>
+            <Experience />
+            <Skills />
+            <ContactInfo />
+        </Wrapper>
+    )
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));

@@ -155,7 +155,7 @@ const PositionDesc = styled.p`
 function Experience() {
     let orderedJobs = orderBy(jobsData, ['date.from.year','date.from.month'], ['desc','desc']);
     return (
-        <Section name="experience" title="Work History">
+        <Section name="experience" title="Experience">
             {orderedJobs.map((job, idx) => {
                 let date             = job.date,
                     fromDate         = new Date(`${date.from.year}, ${date.from.month}, 01`),

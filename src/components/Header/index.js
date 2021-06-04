@@ -18,17 +18,25 @@ const StyledContent = styled(Content)`
     align-items     : center;
     display         : flex;
     justify-content : space-between;
+    @media (max-width : 799px) {
+        flex-direction : column;
+    }
 `;
 
 const LogoWrapper = styled.div`
     align-items : center;
     display     : flex;
+    flex-wrap   : nowrap;
+    @media (max-width : 799px) {
+        margin-bottom : 10;
+    }
 `;
 
 const H1 = styled.h1`
     font-family    : 'Lato', sans-serif;
     font-weight    : 300;
     text-transform : uppercase;
+    white-space    : nowrap;
 `;
 
 function Header(props) {
