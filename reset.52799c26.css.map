@@ -1,0 +1,1 @@
+{"version":3,"sources":["reset.css"],"names":[],"mappings":"AAAA,iBAES,qBAAsB,CAC/B,kBAAwB,QAAS,CAEjC,KAAM,sBAAwB","file":"reset.52799c26.css","sourceRoot":"../src","sourcesContent":["*,\n*::before,\n*::after{box-sizing:border-box;}\nh1, h2, h3, h4, h5, h6 {margin:0;}\n\nhtml {scroll-behavior: smooth;}"]}
