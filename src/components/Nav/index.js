@@ -3,8 +3,12 @@ import styled from '@emotion/styled';
 
 const NavLink = styled.a`
     color           : #999;
+    font-weight     : 400;
     text-decoration : none;
     text-transform  : uppercase;
+    &:hover {
+        color : var(--colorPrimary);
+    }
     & + & {
         margin-left : 20;
     }

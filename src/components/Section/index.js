@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import SectionTitle from '../SectionTitle';
 
 const Wrapper = styled.section`
-    border-bottom : 1px rgba(0,0,0,.1) solid;
+    /* border-bottom : 1px rgba(0,0,0,.1) solid; */
     padding       : var(--contentMargin);
     &:last-child {
         border-bottom: none;
@@ -24,7 +24,7 @@ function Section(props) {
     return(
         <Wrapper className={props.className}>
             <Anchor id={props.name} />
-            {props.title && <SectionTitle name={props.name}>{props.title}</SectionTitle>}
+            {/* {props.title && <SectionTitle name={props.name}>{props.title}</SectionTitle>} */}
             <InnerWrapper>
                 {props.children}
             </InnerWrapper>

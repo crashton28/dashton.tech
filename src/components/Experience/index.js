@@ -158,10 +158,10 @@ function Experience() {
         <Section name="experience" title="Experience">
             {orderedJobs.map((job, idx) => {
                 let date             = job.date,
-                    fromDate         = new Date(`${date.from.year}, ${date.from.month}, 01`),
+                    fromDate         = new Date(`${date.from.month}/01/${date.from.year}`),
                     fromMonth        = fromDate.toLocaleString('en-us', { month: 'short' }),
                     fromYear         = fromDate.toLocaleString('en-us', { year: 'numeric' }),
-                    toDate           = new Date(`${date.to.year}, ${date.to.month}, 01`),
+                    toDate           = new Date(`${date.to.month}/01/${date.to.year}`),
                     toMonth          = toDate.toLocaleString('en-us', { month: 'short' }),
                     toYear           = toDate.toLocaleString('en-us', { year: 'numeric' }),
                     employer         = job.employer,
