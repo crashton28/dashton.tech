@@ -55,10 +55,10 @@ const Logo = styled.img`
 `;
 
 const SkillLabel = styled.span`
-
+    color : var(--colorSecondary);
 `;
 
-function Skills() {
+const Skills = () => {
     return (
         <Section name="skills" title="Skills">
             <StyledContent>

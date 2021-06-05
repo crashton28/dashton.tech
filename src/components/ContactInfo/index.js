@@ -32,7 +32,7 @@ const Center = styled.div`
     flex-direction: column;
 `
 
-function ContactInfo(props) {
+const ContactInfo = () => {
     return (
         <Wrapper name="contact">
             <Content>

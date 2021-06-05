@@ -19,7 +19,7 @@ const Anchor = styled.a`
     top : -120;
 `;
 
-function Section(props) {
+const Section = (props) => {
     return(
         <Wrapper className={props.className}>
             <Anchor id={props.name} />

@@ -9,7 +9,7 @@ const LogoSVG = styled.svg`
     width               : 40;
 `;
 
-function Logo(props) {
+const Logo = (props) => {
     return (
         <LogoSVG className={props.className} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 200">
             <g id="Layer_2" data-name="Layer 2">

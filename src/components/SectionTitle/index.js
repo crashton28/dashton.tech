@@ -14,7 +14,7 @@ const H2 = styled.h2`
     text-transform : uppercase;
 `;
 
-function SectionTitle(props) {
+const SectionTitle = (props) => {
     return (
         <Header>
             <H2>{props.children}</H2>

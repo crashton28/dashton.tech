@@ -16,7 +16,7 @@ const NavLink = styled.a`
     }
 `;
 
-function Nav(props) {
+const Nav = () => {
     return (
         <nav>
             <NavLink href="#experience">Experience</NavLink>

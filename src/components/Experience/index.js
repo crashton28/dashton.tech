@@ -49,7 +49,7 @@ const EmployerName = styled.span`
 `;
 
 const EmployerLocation = styled.span`
-    color : #666;
+    color : var(--colorSecondary);
 `;
 
 const EmploymentPeriod = styled.div`
@@ -81,10 +81,12 @@ const EmploymentPeriod = styled.div`
 `;
 
 const EmploymentDate = styled.div`
-    text-transform : uppercase;
+      align-items    : center;
+      display        : flex;
+      text-transform : uppercase;
     & + &:before {
         content : '-';
-        margin : 0 4;
+        margin  : 0 4;
     }
 `;
 
@@ -98,6 +100,7 @@ const Year = styled.span`
 
 
 const Title = styled.h2`
+    color           : var(--colorHeading);
     display         : flex;
     flex-direction  : column;
     font-size       : 1.8rem;
@@ -107,7 +110,7 @@ const Title = styled.h2`
 `;
 
 const Description = styled.p`
-    color : #666;
+    color : var(--colorSecondary);
     margin : 0;
 `;
 
@@ -146,13 +149,13 @@ const PositionTitle = styled.div`
 
 `;
 const PositionDesc = styled.p`
-    color         : #666;
+    color         : var(--colorSecondary);
     margin-top    : 10;
     margin-bottom : 10;
 `
 
 
-function Experience() {
+const Experience = () => {
     let orderedJobs = orderBy(jobsData, ['date.from.year','date.from.month'], ['desc','desc']);
     return (
         <Section name="experience" title="Experience">

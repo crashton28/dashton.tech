@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import styled from '@emotion/styled';
-import Header from './components/Header';
-import Quote from './components/Quote';
-import Bio from './components/Bio';
+import Lead from './components/Lead';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import ContactInfo from './components/ContactInfo';
@@ -13,18 +11,18 @@ const Wrapper = styled.div`
     font-size       : 16px;
     font-weight     : 300;
     line-height     : 1.4;
-    --colorPrimary  : tomato;
-    --contentMargin : 40px;
-    --border        : 1px dotted rgba(0,0,0,.2);
+    /* --colorPrimary  : tomato; */
+    --colorHeading   : #FF665A;
+    --colorPrimary   : #FF665A;
+    --colorSecondary : #7D6B7D;
+    --contentMargin  : 40px;
+    --border         : 1px dotted rgba(0,0,0,.2);
 `;
 
-const App = (props) => {
-    const [activeNav, setActiveNav] = useState();
+const App = () => {
     return(
         <Wrapper>
-            <Header activeNav={activeNav}/>
-            {/* <Quote /> */}
-            <Bio />
+            <Lead />
             <Experience />
             <Skills />
             <ContactInfo />

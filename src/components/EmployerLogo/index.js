@@ -9,7 +9,7 @@ const Logo = styled.img`
     height : 50;
 `;
 
-function EmployerLogo(props) {
+const EmployerLogo = (props) => {
     return (
         <Wrapper>
             <Logo src={props.src} />

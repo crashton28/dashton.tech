@@ -7,7 +7,7 @@ const Wrapper = styled.div`
     max-width: 800;
 `;
 
-function Content(props) {
+const Content = (props) => {
     return <Wrapper className={props.className}>{props.children}</Wrapper>;
 }
 
