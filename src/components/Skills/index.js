@@ -33,7 +33,7 @@ const CategoryLabel = styled.div`
 `;
 
 const CategorySkills = styled.div`
-    border          : 1px solid rgba(0,0,0,.1);
+    border          : var(--border);
     border-radius   : 12px;
     display         : flex;
     flex-wrap       : wrap;

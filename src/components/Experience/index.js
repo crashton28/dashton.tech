@@ -5,20 +5,19 @@ import orderBy from 'lodash/orderBy';
 import Section from '../Section';
 import EmployerLogo from '../EmployerLogo';
 import Content from '../Content';
-
-const Job = styled.div`
-    align-items : flex-start;
-    display     : flex;
-    position    : relative;
-    &:last-child {
-        margin-bottom : calc(var(--contentMargin) * -1);
-    }
-`;
+import { BREAKPOINT } from '../../constants';
 
 const StyledContent = styled(Content)`
-    align-items : flex-start;
-    display     : flex;
-    position    : relative;
+    padding-bottom : 80;
+    padding-left   : var(--contentMargin);
+    position       : relative;
+    z-index        : 1;
+    @media (max-width: ${BREAKPOINT[0]}) {
+        margin-left : calc(var(--contentMargin) * -1);
+    }
+    @media (min-width: ${BREAKPOINT[1]}) {
+        border-left : var(--border);
+    }
     &:last-child {
         padding-bottom : 0;
         &:after {
@@ -55,23 +54,29 @@ const EmployerLocation = styled.span`
 
 const EmploymentPeriod = styled.div`
     background      : var(--colorPrimary);
-    border-radius   : 20px;
-    border          : 1px rgba(0,0,0,.05) solid;
     color           : #fff;
     display         : inline-flex;
     height          : 24;
     justify-content : flex-end;
-    margin-left     : calc((var(--contentMargin) + 12px) * -1);
     padding         : 0 12 0 0;
     position        : relative;
     z-index         : 2;
-    &:before {
-        background    : #fff;
-        border-radius : 10px;
-        content       : '';
-        height        : 10;
-        margin        : 6 calc(var(--contentMargin) - 6px) 7 6;
-        width         : 10;
+    @media (max-width : ${BREAKPOINT[0]}) {
+        border-radius : 0 20px 20px 0;
+        margin-left   : calc(var(--contentMargin) * -1);
+        padding-left  : var(--contentMargin);
+    }
+    @media (min-width : 680px) {
+        border-radius   : 20px;
+        margin-left     : calc((var(--contentMargin) + 12px) * -1);
+        &:before {
+            background    : #fff;
+            border-radius : 10px;
+            content       : '';
+            height        : 10;
+            margin        : 6 calc(var(--contentMargin) - 6px) 7 6;
+            width         : 10;
+        }
     }
 `;
 
@@ -91,13 +96,6 @@ const Year = styled.span`
     font-weight : 700;
 `;
 
-const Details = styled.div`
-    border-left    : 1px solid rgba(0,0,0,.1);
-    padding-bottom : 80;
-    padding-left   : var(--contentMargin);
-    position       : relative;
-    z-index        : 1;
-`;
 
 const Title = styled.h2`
     display         : flex;
@@ -125,16 +123,18 @@ const Position = styled.div`
     &:last-child {
         margin-bottom : 0;
     }
-    &:before {
-        background    : var(--colorPrimary);
-        border-radius : 50%;
-        content       : '';
-        display       : block;
-        height        : 11;
-        left          : calc((var(--contentMargin) + 6px) * -1);
-        position      : absolute;
-        top           : 6;
-        width         : 11;
+    @media (min-width : 680px) {
+        &:before {
+            background    : var(--colorPrimary);
+            border-radius : 50%;
+            content       : '';
+            display       : block;
+            height        : 11;
+            left          : calc((var(--contentMargin) + 6px) * -1);
+            position      : absolute;
+            top           : 6;
+            width         : 11;
+        }
     }
 `;
 
@@ -169,52 +169,48 @@ function Experience() {
                     orderedPositions = positions && orderBy(positions, ['date.from.year','date.from.month'], ['desc','desc']);
 
                 return (
-                    <Job key={idx}>
-                        <StyledContent>
-                            <Details>
-                                <EmploymentPeriod>
-                                    <EmploymentDate>
-                                        <Month>{fromMonth}</Month>
-                                        <Year>{fromYear}</Year>
-                                    </EmploymentDate>
-                                    <EmploymentDate>
-                                        {date.to.year ? (
-                                            <>
-                                                <Month>{toMonth}</Month>
-                                                <Year>{toYear}</Year>
-                                            </>
-                                        ) : <Year>Today</Year>}
-                                    </EmploymentDate>
-                                </EmploymentPeriod>
-                                <Employer>
-                                    <div>
-                                        <EmployerName>{employer.name}</EmployerName>
-                                        <EmployerLocation>{employer.location}</EmployerLocation>
-                                    </div>
-                                    <EmployerLogo src={employer.logo} />
-                                </Employer>
-                                <Title>
-                                    {job.title}
-                                </Title>
-                                <Description>{job.description}</Description>
-                                {positions && (
-                                    <Positions>
-                                    {orderedPositions.map((position, idx) => {
-                                        return (
-                                            <Position key={idx}>
-                                                <PositionYear>{position.date.from.year}</PositionYear>
-                                                <div>
-                                                    <PositionTitle>{position.title}</PositionTitle>
-                                                    {position.description && <PositionDesc>{position.description}</PositionDesc>}
-                                                </div>
-                                            </Position>
-                                        )
-                                    })}
-                                    </Positions>
-                                )}
-                            </Details>
-                        </StyledContent>
-                    </Job>
+                    <StyledContent key={idx}>
+                        <EmploymentPeriod>
+                            <EmploymentDate>
+                                <Month>{fromMonth}</Month>
+                                <Year>{fromYear}</Year>
+                            </EmploymentDate>
+                            <EmploymentDate>
+                                {date.to.year ? (
+                                    <>
+                                        <Month>{toMonth}</Month>
+                                        <Year>{toYear}</Year>
+                                    </>
+                                ) : <Year>Today</Year>}
+                            </EmploymentDate>
+                        </EmploymentPeriod>
+                        <Employer>
+                            <div>
+                                <EmployerName>{employer.name}</EmployerName>
+                                <EmployerLocation>{employer.location}</EmployerLocation>
+                            </div>
+                            <EmployerLogo src={employer.logo} />
+                        </Employer>
+                        <Title>
+                            {job.title}
+                        </Title>
+                        <Description>{job.description}</Description>
+                        {positions && (
+                            <Positions>
+                            {orderedPositions.map((position, idx) => {
+                                return (
+                                    <Position key={idx}>
+                                        <PositionYear>{position.date.from.year}</PositionYear>
+                                        <div>
+                                            <PositionTitle>{position.title}</PositionTitle>
+                                            {position.description && <PositionDesc>{position.description}</PositionDesc>}
+                                        </div>
+                                    </Position>
+                                )
+                            })}
+                            </Positions>
+                        )}
+                    </StyledContent>
                 );
             })}
         </Section>

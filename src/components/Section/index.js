@@ -3,16 +3,15 @@ import styled from '@emotion/styled';
 import SectionTitle from '../SectionTitle';
 
 const Wrapper = styled.section`
-    /* border-bottom : 1px rgba(0,0,0,.1) solid; */
-    padding       : var(--contentMargin);
+    padding : var(--contentMargin);
     &:last-child {
         border-bottom: none;
     }
 `;
 
 const InnerWrapper = styled.div`
-    margin    : 0 auto;
-    width     : 100%;
+    margin : 0 auto;
+    width  : 100%;
 `;
 
 const Anchor = styled.a`
