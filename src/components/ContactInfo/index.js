@@ -2,45 +2,52 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Content from '../Content';
 import Section from '../Section';
+import LinkedInLogo from '../../assets/linkedin.svg';
 
 const Wrapper = styled(Section)`
     align-items     : center;
     background      : var(--colorPrimary);
     color           : #fff;
     display         : flex;
-    font-size       : 24;
-    font-weight     : 400;
     justify-content : center;
     padding         : 20 var(--contentMargin);
     position        : relative;
     z-index         : 0;
 `;
 
+const StyledContent = styled(Content)`
+    align-items    : center;
+    display        : flex;
+    font-size       : 2rem;
+    flex-direction: row;
+    justify-content : center;
+`;
+
 const Link = styled.a`
+    align-items     : center;
     color           : #fff;
-    font-weight     : 600;
+    display         : flex;
     margin          : 0 4;
     text-decoration : none;
-    &: hover {
+    text-transform: uppercase;
+    &:hover {
         text-decoration : underline;
     }
 `;
 
-const Center = styled.div`
-    align-items : center;
-    display : flex;
-    flex-direction: column;
-`
+const LinkedIn = styled.img`
+    height : 1em;
+    margin-left : 1em;
+`;
+
 
 const ContactInfo = () => {
     return (
         <Wrapper name="contact">
-            <Content>
-                <Center>
-                    <Link href="mailto:me@dashton.tech">me@dashton.tech</Link>
-                    <div>Find me on <Link href="https://www.linkedin.com/in/ashton-david" target="_blank">Linked In</Link></div>
-                </Center>
-            </Content>
+            <StyledContent>
+                {/* <Link href="mailto:me@dashton.tech">me@dashton.tech</Link> */}
+                <Link href="https://www.linkedin.com/in/ashton-david" target="_blank"><LinkedIn src={LinkedInLogo} /></Link>
+            </StyledContent>
         </Wrapper>
     )
 }
