@@ -23,16 +23,16 @@ const Content = styled.div`
     }
     @media (min-width: ${BREAKPOINT[1]}) {
         position   : relative;
-        &:before, &:after {
+        &:before {
             background : var(--colorPrimary);
             bottom     : 0;
             content    : '';
             display    : block;
             opacity    : .3;
             position   : absolute;
-            right      : -20;
+            left       : 100%;
             top        : 0;
-            width      : 20;
+            width      : 5%;
             z-index    : 2;
         }
     }
@@ -50,7 +50,7 @@ const BioImg = styled.img`
         display    : block;
         object-fit : cover;
         position   : relative;
-        width      : 30%;
+        width      : 50%;
         &:before {
             background : var(--colorPrimary);
             bottom     : 0;
