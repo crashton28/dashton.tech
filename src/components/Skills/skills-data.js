@@ -5,7 +5,9 @@ import GitLab from '../../assets/skills/gitlab.svg';
 import HTML from '../../assets/skills/html5.svg';
 import Illustrator from '../../assets/skills/illustrator.svg';
 import JavaScript from '../../assets/skills/js.svg';
+import JQuery from '../../assets/skills/jquery.svg';
 import MySQL from '../../assets/skills/mysql.svg';
+import NodeJS from '../../assets/skills/nodejs.svg';
 import Photoshop from '../../assets/skills/photoshop.svg';
 import PHP from '../../assets/skills/php.svg';
 import ReactLogo from '../../assets/skills/react.svg';
@@ -61,8 +63,16 @@ export default [
                 logo  : JavaScript
             },
             {
+                label : 'JQuery',
+                logo  : JQuery
+            },
+            {
                 label : 'MySQL',
                 logo  : MySQL
+            },
+            {
+                label : 'NodeJS',
+                logo  : NodeJS
             },
             {
                 label : 'PHP',
