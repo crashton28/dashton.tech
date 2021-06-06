@@ -16,12 +16,21 @@ const StyledContent = styled(Content)`
     }
     @media (min-width: ${BREAKPOINT[1]}) {
         border-left : var(--border);
+        &:last-child {
+            &:after {
+                background    : linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+                content       : '';
+                display       : block;
+                height        : 60;
+                left          : -1;
+                position      : absolute;
+                bottom           : 0;
+                width         : 1;
+            }
+        }
     }
     &:last-child {
         padding-bottom : 0;
-        &:after {
-            display : none;
-        }
     }
 `;
 

@@ -10,7 +10,7 @@ import ContactInfo from './components/ContactInfo';
 
 const Wrapper = styled.div`
     font-family      : 'Lato', sans-serif;
-    font-size        : 16px;
+    font-size        : 1.2rem;
     font-weight      : 300;
     line-height      : 1.4;
     --colorHeading   : #FF665A;
