@@ -9,7 +9,7 @@ const Logo = styled.img`
     height : 50;
 `;
 
-const EmployerLogo = (props) => {
+const LogoLocation = (props) => {
     return (
         <Wrapper>
             <Logo src={props.src} />
@@ -17,4 +17,4 @@ const EmployerLogo = (props) => {
     )
 }
 
-export default EmployerLogo;
+export default LogoLocation;

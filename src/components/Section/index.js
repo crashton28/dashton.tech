@@ -4,8 +4,13 @@ import SectionTitle from '../SectionTitle';
 
 const Wrapper = styled.section`
     padding : var(--contentMargin);
-    &:last-child {
-        border-bottom: none;
+    & + &:before {
+        color         : rgba(0,0,0,.2);
+        content       : '· · ·';
+        display       : block;
+        font-size     : 2rem;
+        margin-bottom : var(--contentMargin);
+        text-align    : center;
     }
 `;
 
@@ -23,7 +28,7 @@ const Section = (props) => {
     return(
         <Wrapper className={props.className}>
             <Anchor id={props.name} />
-            {/* {props.title && <SectionTitle name={props.name}>{props.title}</SectionTitle>} */}
+            {props.title && <SectionTitle name={props.name}>{props.title}</SectionTitle>}
             <InnerWrapper>
                 {props.children}
             </InnerWrapper>

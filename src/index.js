@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 import Lead from './components/Lead';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
+import Education from './components/Education';
 import ContactInfo from './components/ContactInfo';
 
 const Wrapper = styled.div`
@@ -24,6 +25,7 @@ const App = () => {
         <Wrapper>
             <Lead />
             <Experience />
+            <Education />
             <Skills />
             <ContactInfo />
         </Wrapper>
