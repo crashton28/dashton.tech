@@ -5,12 +5,12 @@ import SectionTitle from '../SectionTitle';
 const Wrapper = styled.section`
     padding : var(--contentMargin);
     & + &:before {
-        color         : rgba(0,0,0,.2);
-        content       : '· · ·';
-        display       : block;
-        font-size     : 2rem;
-        margin-bottom : var(--contentMargin);
-        text-align    : center;
+        color      : rgba(0,0,0,.2);
+        content    : '· · ·';
+        display    : block;
+        font-size  : 2rem;
+        margin     : calc(var(--contentMargin) * -1) 0 var(--contentMargin);
+        text-align : center;
     }
 `;
 
