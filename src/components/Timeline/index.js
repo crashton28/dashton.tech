@@ -4,6 +4,7 @@ import Content from '../Content';
 import orderBy from 'lodash/orderBy';
 import LogoLocation from '../LogoLocation';
 import { BREAKPOINT } from '../../constants';
+import Highlights from './Highlights';
 
 
 const StyledContent = styled(Content)`
@@ -129,6 +130,7 @@ const Positions = styled.div`
 
 const Position = styled.div`
     display       : flex;
+    flex-direction : column;
     flex-wrap     : nowrap;
     margin-bottom : 10;
     position      : relative;
@@ -150,7 +152,7 @@ const Position = styled.div`
     }
 `;
 
-const PositionYear = styled.span`
+const PositionPeriod = styled.span`
     font-weight  : 700;
     margin-right : 10;
 `;
@@ -214,15 +216,19 @@ const Timeline = (props) => {
             </Location>
             {props.title && <Title>{props.title}</Title>}
             {props.description && <Description>{props.description}</Description>}
+            {props.highlights && <Highlights items={props.highlights} />}
             {positions && (
                 <Positions>
                 {orderedPositions.map((position, idx) => {
                     return (
                         <Position key={idx}>
-                            <PositionYear>{getYear(position.date.from)}</PositionYear>
+                            <PositionPeriod>
+                                {getYear(position.date.from)} - {position.date.to ? getYear(position.date.to) : 'TODAY'}
+                            </PositionPeriod>
                             <div>
                                 <PositionTitle>{position.title}</PositionTitle>
                                 {position.description && <PositionDesc>{position.description}</PositionDesc>}
+                                {position.highlights && <Highlights items={position.highlights} />}
                             </div>
                         </Position>
                     )

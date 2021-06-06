@@ -21,6 +21,7 @@ const Experience = () => {
                         address     = {employer.location}
                         company     = {employer.name}
                         description = {job.description}
+                        highlights  = {job.highlights}
                         logo        = {employer.logo}
                         positions   = {positions}
                         title       = {job.title}

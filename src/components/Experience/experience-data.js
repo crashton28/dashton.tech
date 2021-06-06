@@ -21,7 +21,15 @@ export default [
                     from : '2017-09-01',
                 },
                 title       : "Manager, Front-End Development",
-                description : "Moved to the newly created Disney Direct to Consumer & International organization (now DMED).  Change required my team to support many brands beyond ESPN including ABC, ABCNews, DisneyNow, National Geographic and more.  Removed ESPN specificity of features and migrated UI component library to new repository to support the added brands.  Collaborated with design and product to create new components to be shared across all brands within our organization."
+                // description : "Moved to the newly created Disney Direct to Consumer & International organization (now DMED).  Change required my team to support many brands beyond ESPN including ABC, ABCNews, DisneyNow, National Geographic and more.  Removed ESPN specificity of features and migrated UI component library to new repository to support the added brands.  Collaborated with design and product to create new components to be shared across all brands within our organization.",
+                highlights  : [
+                    "Transferred to Disney Direct to Consumer & International organization (now DMED Technology)",
+                    "Led UI component library development for ABC, ABC News, DisneyNow, ESPN, National Geographic, Marvel Unlimited, etc",
+                    "Collaborated with design and product to apply new shared Design language (Prism) to components",
+                    "Led the development of a new fully custom UI component library based on Prism to be shared across shared DMED brands",
+                    "Updated component library to be fully accessible and support accessibility implementation across DMED brands",
+                    "Continued to lead team of UI Engineers in development and support of UI component development"
+                ]
             },
             {
                 date : {
@@ -29,7 +37,12 @@ export default [
                     to : '2017-09-01'
                 },
                 title       : "Manager, Front-End Product Design",
-                description : "Collaborated closely with design and product to lead the development of a fully custom UI component library of production ready components built with React.  Built new documentation tool 'Playbook' to support implementation and provide design/product with examples of production components."
+                // description : "Collaborated closely with design and product to lead the development of a fully custom UI component library of production ready components built with React.  Built new documentation tool 'Playbook' to support implementation and provide design/product with examples of production components.",
+                highlights : [
+                    "Transferred from Design to Product along with the UI Engineering team",
+                    "Collaborated closely with design and product to lead the development of a fully custom UI component library of production ready components built with the React library.",
+                    "Created prototypes for design and product to quickly test ideas and develop new products"
+                ]
             },
             {
                 date : {
@@ -37,7 +50,9 @@ export default [
                     to   : '2016-06-01'
                 },
                 title       : "Art Director",
-                description : "Designed and developed HTML/CSS for ESPN domestic and international sites.  Collaborated closely with design and product teams throughout a project's lifecycle.  Led team of developers in the development of UI components to support engineering implementation.  Created documentation site to guide implementation as my team didn't build the production templates that leveraged our HTML/CSS."
+                highlights : [
+                    "Promoted to Art Director leading UI Engineering within the design team of Digital Media",
+                ]
             },
             {
                 date : {
@@ -45,7 +60,11 @@ export default [
                     to   : '2015-03-01'
                 },
                 title       : "Associate Art Director",
-                description : "Designed and developed HTML/CSS for ESPN domestic and international sites.  Led team of developers in the development of UI components to support engineering implementation."
+                highlights  : [
+                    "Promoted to lead team of UI Engineers supporting all ESPN domestic and international sites as well as ESPN sibling sites (Five Thirty Eight, ESPNW, etc)",
+                    "Worked closely with product to design and develop the next ESPN.com redesign iteration and the application of responsive design principles",
+                    "Led development of a documentation site to guide implementation of HTML/CSS/JS within Tea templates (Tea is a Disney internal codebase)",
+                ]
             },
             {
                 date : {
@@ -53,7 +72,11 @@ export default [
                     to   : '2011-07-01'
                 },
                 title       : "Senior Web Designer",
-                description : "Designed and developed HTML/CSS for various sections and components of ESPN.com's homepage, sport indexes, articles, game packages, etc"
+                highlights : [
+                    "Hired as full time employee of Disney with a focus on ESPN.com",
+                    "Designed and developed various page types and components of ESPN.com's homepage, sport indexes, articles, game packages, etc",
+                    "Supported design and development of ESPN longform stories"
+                ]
             },
             {
                 date : {
@@ -61,7 +84,10 @@ export default [
                     to : '2010-01-01'
                 },
                 title       : "Web Designer (Contract)",
-                description : "Designed and developed HTML/CSS for the ESPN.com redesign launched in 2009"
+                highlights : [
+                    "Contracted through Apex Systems to support ESPN.com redesign launching in 2009",
+                    "Designed and developed components and pages for ESPN.com redesign"
+                ]
             },
         ]
     },
@@ -76,7 +102,11 @@ export default [
             logo     : LogoInfotree
         },
         title       : "Senior Web Designer / Developer",
-        description : "Created web page designs using Photoshop, converted designs to HTML through hand coding using Dreamweaver, created Flash sites, intros and banners, created PHP/MySQL database sites, and worked in other various graphic design tasks for a wide variety of companies including e-commerce, manufacturing, health care, web portals, etc. This position required a large amount of creativity and planning in as little amount of time as possible to achieve the best results and also shows the ability to work with clients.",
+        highlights : [
+            "Designed and developed front end for all Infotree clients including e-commerce, manufacturing, health care, web portals, etc",
+            "Developed various PHP/MySQL sites including a content management system",
+            "Built multiple Flash sites, intros and banners",
+        ]
     },
     // {
     //     date : {
