@@ -120,8 +120,9 @@ const Title = styled.h2`
 `;
 
 const Description = styled.p`
-    color : var(--colorSecondary);
-    margin : 0;
+    color     : var(--colorSecondary);
+    font-size : 1.4rem;
+    margin    : 0 0 var(--contentMargin);
 `;
 
 const Positions = styled.div`

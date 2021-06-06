@@ -41,14 +41,14 @@ const CategorySkills = styled.div`
     display         : flex;
     flex-wrap       : wrap;
     justify-content : center;
-    padding         : 20 10 0;
+    padding         : var(--contentMargin) var(--contentMargin) calc(var(--contentMargin) / 2);
     width           : 100%;
 `;
 
 const Skill = styled.div`
     align-items    : center;
     display        : flex;
-    margin         : 0 10 20;
+    margin         : 0 10 calc(var(--contentMargin) / 2);
 `;
 
 const Logo = styled.img`
