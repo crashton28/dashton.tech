@@ -14,21 +14,20 @@ export default [
             location : "Bristol, CT",
             logo     : LogoDisney
         },
-        title     : "Manager, Front-End Development",
-        positions : [
+        title       : "Manager, Front-End Development",
+        description : "Throughout my career at the Walt Disney Company, I have collaborated closely with the product, design, and engineering teams to design and led the development of a UI component library to be shared across the organization.",
+        positions   : [
             {
                 date : {
                     from : '2017-09-01',
                 },
                 title       : "Manager, Front-End Development",
-                // description : "Moved to the newly created Disney Direct to Consumer & International organization (now DMED).  Change required my team to support many brands beyond ESPN including ABC, ABCNews, DisneyNow, National Geographic and more.  Removed ESPN specificity of features and migrated UI component library to new repository to support the added brands.  Collaborated with design and product to create new components to be shared across all brands within our organization.",
                 highlights  : [
                     "Transferred to Disney Direct to Consumer & International organization (now DMED Technology)",
-                    "Led UI component library development for ABC, ABC News, DisneyNow, ESPN, National Geographic, Marvel Unlimited, etc",
+                    "Led development of new shared UI component library to be used on all DMED brands including ABC, ABC News, DisneyNow, ESPN, National Geographic, Marvel Unlimited, etc",
                     "Collaborated with design and product to apply new shared Design language (Prism) to components",
-                    "Led the development of a new fully custom UI component library based on Prism to be shared across shared DMED brands",
                     "Updated component library to be fully accessible and support accessibility implementation across DMED brands",
-                    "Continued to lead team of UI Engineers in development and support of UI component development"
+                    "Led development of new documentation platform (Storybook) enabling development of production ready components directly within our documentation",
                 ]
             },
             {
@@ -37,7 +36,6 @@ export default [
                     to : '2017-09-01'
                 },
                 title       : "Manager, Front-End Product Design",
-                // description : "Collaborated closely with design and product to lead the development of a fully custom UI component library of production ready components built with React.  Built new documentation tool 'Playbook' to support implementation and provide design/product with examples of production components.",
                 highlights : [
                     "Transferred from Design to Product along with the UI Engineering team",
                     "Collaborated closely with design and product to lead the development of a fully custom UI component library of production ready components built with the React library.",
