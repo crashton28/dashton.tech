@@ -28,6 +28,7 @@ export default [
                     "Collaborated with design and product to apply new shared Design language (Prism) to components",
                     "Updated component library to be fully accessible and support accessibility implementation across DMED brands",
                     "Led development of new documentation platform (Storybook) enabling development of production ready components directly within our documentation",
+                    "Developed system to manage iconography and enable brands to pull in only the required icons for their brand"
                 ]
             },
             {
@@ -62,6 +63,7 @@ export default [
                     "Promoted to lead team of UI Engineers supporting all ESPN domestic and international sites as well as ESPN sibling sites (Five Thirty Eight, ESPNW, etc)",
                     "Worked closely with product to design and develop the next ESPN.com redesign iteration and the application of responsive design principles",
                     "Led development of a documentation site to guide implementation of HTML/CSS/JS within Tea templates (Tea is a Disney internal codebase)",
+                    "Contributed to the winning Digital Media Hackathon team in back-to-back years"
                 ]
             },
             {
