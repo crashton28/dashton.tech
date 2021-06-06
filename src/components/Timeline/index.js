@@ -64,6 +64,7 @@ const Period = styled.div`
     background      : var(--colorPrimary);
     color           : #fff;
     display         : inline-flex;
+    font-size       : 1rem;
     height          : 24;
     justify-content : flex-end;
     padding         : 0 12 0 0;

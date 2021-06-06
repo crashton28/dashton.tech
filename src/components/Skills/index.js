@@ -4,17 +4,19 @@ import skillsData from "./skills-data";
 import Section from '../Section';
 import Content from '../Content';
 
+const StyledContent = styled(Content)``;
+
 const Category = styled.div`
     align-items     : center;
     border-radius   : 6px;
     display         : flex;
     flex-direction  : column;
     justify-content : center;
-    margin          : 0 0 20;
     width           : 100%;
+    & + & {
+        margin-top : var(--contentMargin);
+    }
 `;
-
-const StyledContent = styled(Content)``;
 
 const CategoryLabel = styled.div`
     align-items     : center;
@@ -22,6 +24,7 @@ const CategoryLabel = styled.div`
     border-radius   : 20px;
     color           : #fff;
     display         : flex;
+    font-size       : 1rem;
     font-weight     : 600;
     height          : 24;
     line-height     : 1;
