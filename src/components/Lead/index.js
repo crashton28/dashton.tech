@@ -15,14 +15,12 @@ const Content = styled.div`
     color           : #fff;
     display         : flex;
     flex            : 1 1 auto;
-    font-size       : 1.4rem;
+    font-size       : 4vw;
     justify-content : center;
     padding          : var(--contentMargin) 0;
-    @media (min-width: 440px) {
-        font-size : 2rem;
-    }
     @media (min-width: ${BREAKPOINT[1]}) {
-        position   : relative;
+        font-size : 2vw;
+        position  : relative;
         &:before {
             background : var(--colorPrimary);
             bottom     : 0;
@@ -39,6 +37,7 @@ const Content = styled.div`
 `;
 
 const Slogan = styled.div`
+    font-size : 1.55em;
     span {
         display : block;
     }
@@ -65,13 +64,9 @@ const BioImg = styled.img`
 
 const StyledLogo = styled(Logo)`
     fill   : #fff;
-    height : 90;
-    margin : 0 1.4rem 0 0;
-    width  : 90;
-    @media (min-width: 440px) {
-        height : 120;
-        width  : 120;
-    }
+    height       : 6em;
+    margin-right : 1em;
+    width        : 6em;
 `;
 
 const Name = styled.span`
@@ -89,7 +84,7 @@ const Lead = () => {
                     <Name>Dave Ashton</Name>
                 </Slogan>
             </Content>
-            <BioImg src={BioPic} />
+            <BioImg src={BioPic} alt="Dave Ashton"/>
         </StyledSection>
     )
 }

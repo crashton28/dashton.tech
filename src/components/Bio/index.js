@@ -64,7 +64,7 @@ const Bio = () => {
                 <Hello>
                     <Pic src={BioPic}/>
                     <div>
-                        <span>Hello, </span><span>I'm Dave</span>!
+                        <span>Hello, </span><span>I'm Dave!</span>
                     </div>
                 </Hello>
                 <p>I'm a <em>hybrid designer/developer</em> (<Link href="https://medium.com/@katherinemartinez/the-unicorn-hybrid-designer-developer-5e89607d5fe0" target="_blank">the unicorn does exist!</Link>) and I've built web apps for over 20 years.  I've seen the internet go from <Link href="http://textfiles.com/underconstruction/" target="_blank">construction sign gifs</Link> to <Link href="https://www.theverge.com/2020/6/30/21308071/google-search-augmented-reality-animals-dinosaurs-tyrannosaurus-rex-velociraptor-triceratops" target="_blank">augmented reality dinosaurs</Link>.</p>
