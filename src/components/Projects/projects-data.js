@@ -16,17 +16,6 @@ export default [
         ]
     },
     {
-        title       : "MLB Gamecast",
-        role        : "UI Engineering Lead / Engineer",
-        description : "Led UI Engineering of MLB Gamecast. Developed header animations and transitions and oversaw development of field animations.",
-        screens     : [
-            {
-                label : "Field Animation",
-                image : MLBAnim
-            }
-        ]
-    },
-    {
         title       : "NFL Gamecast",
         role        : "UI Engineering Lead / Engineer",
         description : "Led and contributed to the UI Engineering of NFL Game Packages including the animated Drive Chart shown here.",
@@ -34,6 +23,17 @@ export default [
             {
                 label : "NFL Drive Chart Animation",
                 image : NFLAnim
+            }
+        ]
+    },
+    {
+        title       : "MLB Gamecast",
+        role        : "UI Engineering Lead / Engineer",
+        description : "Led UI Engineering of MLB Gamecast. Developed header animations and transitions and oversaw development of field animations.",
+        screens     : [
+            {
+                label : "Field Animation",
+                image : MLBAnim
             }
         ]
     },

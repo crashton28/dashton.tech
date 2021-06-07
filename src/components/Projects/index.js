@@ -71,7 +71,7 @@ const Title = styled.h2`
 `;
 
 const Role = styled.div`
-    font-size  : 1.4rem;
+    font-size : 1.4rem;
 `;
 
 const Description = styled.p`
