@@ -19,14 +19,14 @@ const StyledContent = styled(Content)`
         border-left : var(--border);
         &:last-child {
             &:after {
-                background    : linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
-                content       : '';
-                display       : block;
-                height        : 60;
-                left          : -1;
-                position      : absolute;
-                bottom           : 0;
-                width         : 1;
+                background : linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
+                content    : '';
+                display    : block;
+                height     : 60;
+                left       : -1;
+                position   : absolute;
+                bottom     : 0;
+                width      : 1;
             }
         }
     }
@@ -57,7 +57,7 @@ const Company = styled.span`
     line-height     : 1.2;
     justify-content : flex-start;
     text-align      : left;
-    @media all and (min-width: 800px ) {
+    @media all and (min-width: ${BREAKPOINT[1]} ) {
         justify-content : flex-end;
         text-align      : right;
     }
@@ -82,7 +82,7 @@ const Period = styled.div`
         margin-left   : calc(var(--contentMargin) * -1);
         padding-left  : var(--contentMargin);
     }
-    @media (min-width : 680px) {
+    @media (min-width : ${BREAKPOINT[1]}) {
         border-radius   : 20px;
         margin-left     : calc((var(--contentMargin) + 12px) * -1);
         &:before {
@@ -144,7 +144,7 @@ const Position = styled.div`
     &:last-child {
         margin-bottom : 0;
     }
-    @media (min-width : 680px) {
+    @media (min-width : ${BREAKPOINT[1]}) {
         &:before {
             background    : var(--colorPrimary);
             border-radius : 50%;
