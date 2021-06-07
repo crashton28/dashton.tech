@@ -1,7 +1,8 @@
 import MLBAnim from '../../assets/projects/mlb-animation.gif';
 import NFLAnim from '../../assets/projects/nfl-animation.gif';
-import MLBGamecast from '../../assets/projects/mlb-gamecast.png';
-import ESPNOneFeed from '../../assets/projects/espn-onefeed.png';
+import ESPNOneFeed from '../../assets/projects/espn-onefeed.jpg';
+import Iconography from '../../assets/projects/iconography.jpg';
+import Playbook from '../../assets/projects/playbook.jpg';
 
 export default [
     {
@@ -27,6 +28,17 @@ export default [
         ]
     },
     {
+        title : "Playbook Documentation Site",
+        role  : "UI Engineering Lead / Engineer",
+        description : "Led the development our in house code documentation site (Playbook) in order to provide engineers with implementation details, design and product with examples of production ready code.",
+        screens : [
+            {
+                label : "Playbook",
+                image : Playbook
+            }
+        ]
+    },
+    {
         title       : "MLB Gamecast",
         role        : "UI Engineering Lead / Engineer",
         description : "Led UI Engineering of MLB Gamecast. Developed header animations and transitions and oversaw development of field animations.",
@@ -34,6 +46,17 @@ export default [
             {
                 label : "Field Animation",
                 image : MLBAnim
+            }
+        ]
+    },
+    {
+        title : "Iconography Tool",
+        role  : "UI Engineering Lead / Engineer",
+        description : "Engineered a tool to house DMED Iconography which allows engineers to import entire icon sets, partial sets or individual icons in order to optimize a project.",
+        screens : [
+            {
+                label : "Iconography",
+                image : Iconography
             }
         ]
     },
