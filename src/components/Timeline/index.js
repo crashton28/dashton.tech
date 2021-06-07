@@ -133,7 +133,7 @@ const Position = styled.div`
     display       : flex;
     flex-direction : column;
     flex-wrap     : nowrap;
-    margin-bottom : 10;
+    margin-bottom : var(--contentMargin);
     position      : relative;
     &:last-child {
         margin-bottom : 0;

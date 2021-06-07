@@ -9,7 +9,7 @@ const Wrapper = styled.section`
         content    : '· · ·';
         display    : block;
         font-size  : 2rem;
-        margin     : calc(var(--contentMargin) * -1) 0 var(--contentMargin);
+        margin     : calc(var(--contentMargin) * -1) 0 calc(var(--contentMargin) / 2);
         text-align : center;
     }
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import BioPic from '../../assets/biopic.jpg';
+import BioPic from '../../assets/biopic@2x.jpg';
 import Logo from '../Logo';
 import { BREAKPOINT } from '../../constants';
 

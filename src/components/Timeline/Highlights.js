@@ -4,6 +4,7 @@ import styled from '@emotion/styled';
 const UL = styled.ul`
     color        : var(--colorSecondary);
     padding-left : 20;
+    margin       : var(--contentMargin) 0 0;
 `;
 const LI = styled.li`
     & + & {
