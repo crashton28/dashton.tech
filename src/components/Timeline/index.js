@@ -37,10 +37,16 @@ const StyledContent = styled(Content)`
 
 const Location = styled.div`
     align-items: center;
+    background      : rgba(255,255,255,.7);
+    backdrop-filter : blur(2px);
+    border-bottom   : var(--border);
     display         : flex;
     flex            : none;
     justify-content : space-between;
-    margin          : 20 0;
+    padding         : 20 0;
+    position        : sticky;
+    top             : 0;
+    z-index         : 2;
 `;
 
 const Company = styled.span`
@@ -116,7 +122,7 @@ const Title = styled.h2`
     font-size       : 1.8rem;
     font-weight     : 600;
     justify-content : center;
-    margin-bottom   : 20;
+    margin          : 20 0;
 `;
 
 const Description = styled.p`

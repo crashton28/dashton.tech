@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import styled from '@emotion/styled';
-import Lead from './components/Lead';
 import Bio from './components/Bio';
-import Skills from './components/Skills';
+import ContactInfo from './components/ContactInfo';
 import Experience from './components/Experience';
 import Education from './components/Education';
-import ContactInfo from './components/ContactInfo';
+import Lead from './components/Lead';
+import Skills from './components/Skills';
 
 const Wrapper = styled.div`
     font-family      : 'Lato', sans-serif;
