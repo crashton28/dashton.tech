@@ -5,19 +5,9 @@ import Section from '../Section';
 import Content from '../Content';
 import { BREAKPOINT } from '../../constants';
 
-const StyledContent = styled(Content)`
-    margin : 0 calc(var(--contentMargin) * -1);
-    @media (min-width : ${BREAKPOINT[1]}) {
-        max-width : none;
-        width : 100vw;
-    }
-`;
 const Project = styled.section`
-    align-items     : center;
-    display         : flex;
-    justify-content : space-between;;
-    overflow        : hidden;
-    padding         : var(--contentMargin);
+    margin  : 0 calc(var(--contentMargin) * -1);
+    padding : var(--contentMargin);
     &:nth-of-type(odd) {
         background : #333;
         color      : #fff;
@@ -29,12 +19,22 @@ const Project = styled.section`
         background     : var(--colorPrimary);
         color          : #fff;
         @media (min-width : ${BREAKPOINT[1]}) {
-            flex-direction : row-reverse;
+            & > div {
+                flex-direction : row-reverse;
+            }
         }
     }
     @media (max-width : ${BREAKPOINT[0]}) {
-        flex-direction: column-reverse;
+        & > div {
+            flex-direction: column-reverse;
+        }
     }
+`;
+
+const StyledContent = styled(Content)`
+    align-items     : center;
+    display         : flex;
+    justify-content : space-between;
 `;
 
 const Screen = styled.img`
@@ -48,7 +48,7 @@ const Screen = styled.img`
         width : 100%;
     }
     @media (min-width : ${BREAKPOINT[1]}) {
-        width : 30vw;
+        width : 40%;
     }
 `;
 
@@ -61,7 +61,7 @@ const Details = styled.div`
         width      : 100%;
     }
     @media (min-width : ${BREAKPOINT[1]}) {
-        width  : calc(70vw - (var(--contentMargin) * 3));
+        width  : calc(60% - var(--contentMargin));
     }
 `;
 
@@ -82,20 +82,20 @@ const Description = styled.p`
 const Projects = () => {
     return (
         <Section name="Projects" title="Highlights">
-            <StyledContent>
                 {projectsData.map((project, idx) => {
                     return (
                         <Project key={idx}>
-                            <Details>
-                                <Title>{project.title}</Title>
-                                <Role>{project.role}</Role>
-                                {project.description && <Description>{project.description}</Description>}
-                            </Details>
-                            <Screen src={project.screens[0].image} />
+                            <StyledContent>
+                                <Details>
+                                    <Title>{project.title}</Title>
+                                    <Role>{project.role}</Role>
+                                    {project.description && <Description>{project.description}</Description>}
+                                </Details>
+                                <Screen src={project.screens[0].image} />
+                            </StyledContent>
                         </Project>
                     )
                 })}
-            </StyledContent>
         </Section>
     );
 };
