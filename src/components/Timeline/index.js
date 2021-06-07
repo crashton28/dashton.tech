@@ -114,7 +114,7 @@ const Title = styled.h2`
     display         : flex;
     flex-direction  : column;
     font-size       : 1.8rem;
-    font-weight     : 300;
+    font-weight     : 600;
     justify-content : center;
     margin-bottom   : 20;
 `;

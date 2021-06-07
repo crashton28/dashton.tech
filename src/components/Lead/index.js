@@ -17,7 +17,7 @@ const Content = styled.div`
     flex            : 1 1 auto;
     font-size       : 1.4rem;
     justify-content : center;
-    padding          : var(--contentMargin);
+    padding          : var(--contentMargin) 0;
     @media (min-width: 440px) {
         font-size : 2rem;
     }
@@ -74,6 +74,10 @@ const StyledLogo = styled(Logo)`
     }
 `;
 
+const Name = styled.span`
+    font-weight : 600;
+`;
+
 const Lead = () => {
     return (
         <StyledSection name="lead" title="Lead">
@@ -82,7 +86,7 @@ const Lead = () => {
                 <Slogan>
                     <span>Designer</span>
                     <span>Developer</span>
-                    <span>Dave Ashton</span>
+                    <Name>Dave Ashton</Name>
                 </Slogan>
             </Content>
             <BioImg src={BioPic} />
