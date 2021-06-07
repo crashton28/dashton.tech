@@ -15,7 +15,7 @@ export default [
             logo     : LogoDisney
         },
         title       : "Manager, Front-End Development",
-        description : "Throughout my career at the Walt Disney Company, I have collaborated closely with the product, design, and engineering teams to design and led the development of a UI component library to be shared across the organization.",
+        description : "Throughout my career at the Walt Disney Company, I have collaborated closely with the product, design, and engineering teams to design and develop world class online products.",
         positions   : [
             {
                 date : {
@@ -24,11 +24,11 @@ export default [
                 title       : "Manager, Front-End Development",
                 highlights  : [
                     "Transferred to Disney Direct to Consumer & International organization (now DMED Technology)",
-                    "Led development of new shared UI component library to be used on all DMED brands including ABC, ABC News, DisneyNow, ESPN, National Geographic, Marvel Unlimited, etc",
+                    "Led development of new shared UI component library to be used across all DMED Technology business units including ABC, ABC News, DisneyNow, ESPN, National Geographic, Marvel Unlimited, and more.",
                     "Collaborated with design and product to apply new shared Design language (Prism) to components",
                     "Updated component library to be fully accessible and support accessibility implementation across DMED brands",
-                    "Led development of new documentation platform (Storybook) enabling development of production ready components directly within our documentation",
-                    "Developed system to manage iconography and enable brands to pull in only the required icons for their brand"
+                    "Led development of new documentation platform (Playbook) enabling development of production ready components directly within our documentation",
+                    "Developed iconography library enabling brands to import only the icons required for the project"
                 ]
             },
             {
@@ -62,8 +62,9 @@ export default [
                 highlights  : [
                     "Promoted to lead team of UI Engineers supporting all ESPN domestic and international sites as well as ESPN sibling sites (Five Thirty Eight, ESPNW, etc)",
                     "Worked closely with product to design and develop the next ESPN.com redesign iteration and the application of responsive design principles",
-                    "Led development of a documentation site to guide implementation of HTML/CSS/JS within Tea templates (Tea is a Disney internal codebase)",
-                    "Contributed to the winning Digital Media Hackathon team in back-to-back years"
+                    "Led development of game package animations including NFL, MLB, NBA, NHL",
+                    "Contributed to the winning Digital Media Hackathon team in back-to-back years",
+                    "Built documentation site to guide implementation of HTML/CSS/JS within Tea (Disney internal codebase)",
                 ]
             },
             {
@@ -75,7 +76,7 @@ export default [
                 highlights : [
                     "Hired as full time employee of Disney with a focus on ESPN.com",
                     "Designed and developed various page types and components of ESPN.com's homepage, sport indexes, articles, game packages, etc",
-                    "Supported design and development of ESPN longform stories"
+                    "Supported design and development of ESPN longform stories",
                 ]
             },
             {
@@ -86,7 +87,7 @@ export default [
                 title       : "Web Designer (Contract)",
                 highlights : [
                     "Contracted through Apex Systems to support ESPN.com redesign launching in 2009",
-                    "Designed and developed components and pages for ESPN.com redesign"
+                    "Designed and developed components and pages for ESPN.com redesign",
                 ]
             },
         ]
