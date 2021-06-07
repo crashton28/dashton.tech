@@ -5,6 +5,7 @@ import GitLab from '../../assets/skills/gitlab.svg';
 import HTML from '../../assets/skills/html5.svg';
 import Illustrator from '../../assets/skills/illustrator.svg';
 import JavaScript from '../../assets/skills/js.svg';
+import Jest from '../../assets/skills/jest.svg';
 import JQuery from '../../assets/skills/jquery.svg';
 import MySQL from '../../assets/skills/mysql.svg';
 import NodeJS from '../../assets/skills/nodejs.svg';
@@ -15,6 +16,7 @@ import SassLogo from '../../assets/skills/sass.svg';
 import Sketch from '../../assets/skills/sketch.svg';
 import SnapLogo from '../../assets/skills/snapsvg.svg';
 import StyledComponents from '../../assets/skills/styled-components.png';
+import TestingLibrary from '../../assets/skills/testing-library.png';
 import VSCode from '../../assets/skills/visual-studio-code.svg';
 
 export default [
@@ -63,6 +65,10 @@ export default [
                 logo  : JavaScript
             },
             {
+                label : 'Jest',
+                logo  : Jest
+            },
+            {
                 label : 'JQuery',
                 logo  : JQuery
             },
@@ -93,6 +99,10 @@ export default [
             {
                 label : 'Styled Components',
                 logo  : StyledComponents
+            },
+            {
+                label : 'Testing Library',
+                logo  : TestingLibrary
             },
             {
                 label : 'VS Code',
