@@ -23,7 +23,7 @@ const StyledContent = styled(Content)`
                 content    : '';
                 display    : block;
                 height     : 60px;
-                left       : -1;
+                left       : -1px;
                 position   : absolute;
                 bottom     : 0;
                 width      : 1px;
@@ -84,8 +84,8 @@ const Period = styled.div`
         padding-left  : var(--contentMargin);
     }
     @media (min-width : ${BREAKPOINTS.LG[0]}) {
-        border-radius   : 20px;
-        margin-left     : calc((var(--contentMargin) + 12px) * -1);
+        border-radius : 20px;
+        margin-left   : calc((var(--contentMargin) + 12px) * -1);
         &:before {
             background    : #fff;
             border-radius : 50%;
