@@ -18,7 +18,7 @@ const Project = styled.section`
     &:nth-of-type(even) {
         background     : linear-gradient(to bottom, #fff, rgba(0,0,0,.1));
         & img, & video {
-            box-shadow      : 0 0 10px 10px rgba(0,0,0,.03);
+            box-shadow      : 0 0 8px 4px rgba(0,0,0,.03);
         }
         @media (min-width : ${BREAKPOINTS.LG[0]}) {
             & > div {
@@ -41,7 +41,7 @@ const StyledContent = styled(Content)`
 
 const Screen = styled.img`
     border-radius   : 4px;
-    box-shadow      : 0 0 20px 10px rgba(0,0,0,.1);
+    box-shadow      : 0 0 8px 4px rgba(0,0,0,.1);
     flex            : 0 0 auto;
     object-fit      : contain;
     overflow        : hidden;
@@ -56,7 +56,7 @@ const Screen = styled.img`
 
 const Video = styled.video`
     border-radius   : 4px;
-    box-shadow      : 0 0 20px 10px rgba(0,0,0,.1);
+    box-shadow      : 0 0 8px 4px rgba(0,0,0,.1);
     flex            : 0 0 auto;
     object-fit      : contain;
     overflow        : hidden;
