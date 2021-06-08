@@ -6,7 +6,7 @@ import LinkedInLogo from '../../assets/linkedin.svg';
 
 const Wrapper = styled(Section)`
     align-items     : center;
-    background      : var(--colorPrimary);
+    background      : linear-gradient(to bottom, var(--colorPrimary), #E85B51);
     color           : #fff;
     display         : flex;
     justify-content : center;

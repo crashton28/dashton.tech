@@ -9,14 +9,14 @@ const Project = styled.section`
     margin  : 0 calc(var(--contentMargin) * -1);
     padding : var(--contentMargin);
     &:nth-of-type(odd) {
-        background : #333;
+        background : linear-gradient(to bottom, #333, #292929);
         color      : #fff;
         h2 {
             color : var(--colorPrimary);
         }
     }
     &:nth-of-type(even) {
-        background     : var(--colorPrimary);
+        background     : linear-gradient(to bottom, var(--colorPrimary), var(--colorPrimaryGrad));
         color          : #fff;
         @media (min-width : ${BREAKPOINTS.LG[0]}) {
             & > div {

@@ -19,6 +19,7 @@ const App = () => {
                     html {
                         --colorHeading      : #FF665A;
                         --colorPrimary      : #FF665A;
+                        --colorPrimaryGrad  : #CF5148;
                         --colorSecondary    : #7D6B7D;
                         --colorSecondaryAlt : #36BEB0;
                         --colorLink         : cornflowerblue;

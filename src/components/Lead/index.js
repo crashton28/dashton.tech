@@ -6,7 +6,7 @@ import { BREAKPOINTS } from '../../constants';
 
 const StyledSection = styled.div`
     align-items : stretch;
-    background  : var(--colorPrimary);
+    background  : linear-gradient(to bottom, var(--colorPrimary), var(--colorPrimaryGrad));
     display     : flex;
 `;
 
@@ -22,7 +22,7 @@ const Content = styled.div`
         font-size : 2vw;
         position  : relative;
         &:before {
-            background : var(--colorPrimary);
+            background : linear-gradient(to bottom, var(--colorPrimary), var(--colorPrimaryGrad));
             bottom     : 0;
             content    : '';
             display    : block;
