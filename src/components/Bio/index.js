@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import Section from '../Section';
 import Content from '../Content';
 import BioPic from '../../assets/biopic-avatar@2x.jpg';
-import { BREAKPOINT } from '../../constants';
+import { BREAKPOINTS } from '../../constants';
 
 const StyledContent = styled(Content)`
     color      : var(--colorSecondary);
@@ -39,14 +39,14 @@ const Hello = styled.h3`
         margin-right : .2rem;
         white-space  : nowrap;
     }
-    @media (min-width : ${BREAKPOINT[1]}) {
+    @media (min-width : ${BREAKPOINTS.LG[0]}) {
         font-size : 2.4rem;
     }
 `;
 
 const Pic = styled.img`
     display : none;
-    @media (max-width : ${BREAKPOINT[0]}) {
+    @media (max-width : ${BREAKPOINTS.SM[1]}) {
         border-radius : 2rem;
         border        : 1px solid rgba(0,0,0,.1);
         display       : block;

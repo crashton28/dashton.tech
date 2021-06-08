@@ -2,7 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import BioPic from '../../assets/biopic@2x.jpg';
 import Logo from '../Logo';
-import { BREAKPOINT } from '../../constants';
+import { BREAKPOINTS } from '../../constants';
 
 const StyledSection = styled.div`
     align-items : stretch;
@@ -18,7 +18,7 @@ const Content = styled.div`
     font-size       : 4vw;
     justify-content : center;
     padding          : var(--contentMargin) 0;
-    @media (min-width: ${BREAKPOINT[1]}) {
+    @media (min-width: ${BREAKPOINTS.LG[0]}) {
         font-size : 2vw;
         position  : relative;
         &:before {
@@ -45,7 +45,7 @@ const Slogan = styled.div`
 
 const BioImg = styled.img`
     display : none;
-    @media (min-width: ${BREAKPOINT[1]}) {
+    @media (min-width: ${BREAKPOINTS.LG[0]}) {
         display    : block;
         object-fit : cover;
         position   : relative;

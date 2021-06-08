@@ -3,19 +3,19 @@ import styled from '@emotion/styled';
 import Content from '../Content';
 import orderBy from 'lodash/orderBy';
 import LogoLocation from '../LogoLocation';
-import { BREAKPOINT } from '../../constants';
+import { BREAKPOINTS } from '../../constants';
 import Highlights from './Highlights';
 
 
 const StyledContent = styled(Content)`
-    padding-bottom : 80;
+    padding-bottom : calc(var(--contentMargin) * 2);
     padding-left   : var(--contentMargin);
     position       : relative;
     z-index        : 1;
-    @media (max-width: ${BREAKPOINT[0]}) {
+    @media (max-width: ${BREAKPOINTS.SM[1]}) {
         margin-left : calc(var(--contentMargin) * -1);
     }
-    @media (min-width: ${BREAKPOINT[1]}) {
+    @media (min-width: ${BREAKPOINTS.LG[0]}) {
         border-left : var(--border);
         &:last-child {
             &:after {
@@ -43,7 +43,7 @@ const Location = styled.div`
     display         : flex;
     flex            : none;
     justify-content : space-between;
-    padding         : 20 0;
+    padding         : calc(var(--contentMargin) / 2) 0;
     position        : sticky;
     top             : 0;
     z-index         : 2;
@@ -57,7 +57,7 @@ const Company = styled.span`
     line-height     : 1.2;
     justify-content : flex-start;
     text-align      : left;
-    @media all and (min-width: ${BREAKPOINT[1]} ) {
+    @media all and (min-width: ${BREAKPOINTS.LG[0]} ) {
         justify-content : flex-end;
         text-align      : right;
     }
@@ -68,6 +68,7 @@ const Address = styled.span`
 `;
 
 const Period = styled.div`
+    align-items     : center;
     background      : var(--colorPrimary);
     color           : #fff;
     display         : inline-flex;
@@ -77,21 +78,29 @@ const Period = styled.div`
     padding         : 0 12 0 0;
     position        : relative;
     z-index         : 2;
-    @media (max-width : ${BREAKPOINT[0]}) {
+    @media (max-width : ${BREAKPOINTS.SM[1]}) {
         border-radius : 0 20px 20px 0;
         margin-left   : calc(var(--contentMargin) * -1);
         padding-left  : var(--contentMargin);
     }
-    @media (min-width : ${BREAKPOINT[1]}) {
+    @media (min-width : ${BREAKPOINTS.LG[0]}) {
         border-radius   : 20px;
         margin-left     : calc((var(--contentMargin) + 12px) * -1);
         &:before {
             background    : #fff;
-            border-radius : 10px;
+            border-radius : 50%;
             content       : '';
-            height        : 10;
+            height        : 11;
             margin        : 6 calc(var(--contentMargin) - 6px) 7 6;
-            width         : 10;
+            width         : 11;
+        }
+    }
+    @media (min-width: ${BREAKPOINTS.XL[0]}) {
+        height : 2vw;
+        &:before {
+            border-radius : 50%;
+            height        : .7em;
+            width         : .7em;
         }
     }
 `;
@@ -144,7 +153,7 @@ const Position = styled.div`
     &:last-child {
         margin-bottom : 0;
     }
-    @media (min-width : ${BREAKPOINT[1]}) {
+    @media (min-width : ${BREAKPOINTS.LG[0]}) {
         &:before {
             background    : var(--colorPrimary);
             border-radius : 50%;
@@ -155,6 +164,12 @@ const Position = styled.div`
             position      : absolute;
             top           : 6;
             width         : 11;
+        }
+    }
+    @media (min-width: ${BREAKPOINTS.XL[0]}) {
+        &:before {
+            height : .7em;
+            width  : .7em;
         }
     }
 `;

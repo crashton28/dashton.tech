@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { BREAKPOINTS } from '../../constants';
 
 const Wrapper = styled.div`
     margin-bottom      : 4;
@@ -7,6 +8,9 @@ const Wrapper = styled.div`
 
 const Logo = styled.img`
     height : 50;
+    @media (min-width : ${BREAKPOINTS.XL[0]}) {
+        height : 3.5vw;
+    }
 `;
 
 const LogoLocation = (props) => {

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 import projectsData from './projects-data';
 import Section from '../Section';
 import Content from '../Content';
-import { BREAKPOINT } from '../../constants';
+import { BREAKPOINTS } from '../../constants';
 
 const Project = styled.section`
     margin  : 0 calc(var(--contentMargin) * -1);
@@ -18,13 +18,13 @@ const Project = styled.section`
     &:nth-of-type(even) {
         background     : var(--colorPrimary);
         color          : #fff;
-        @media (min-width : ${BREAKPOINT[1]}) {
+        @media (min-width : ${BREAKPOINTS.LG[0]}) {
             & > div {
                 flex-direction : row-reverse;
             }
         }
     }
-    @media (max-width : ${BREAKPOINT[0]}) {
+    @media (max-width : ${BREAKPOINTS.SM[1]}) {
         & > div {
             flex-direction: column-reverse;
         }
@@ -44,10 +44,10 @@ const Screen = styled.img`
     object-fit      : contain;
     overflow        : hidden;
 
-    @media (max-width : ${BREAKPOINT[0]}) {
+    @media (max-width : ${BREAKPOINTS.SM[1]}) {
         width : 100%;
     }
-    @media (min-width : ${BREAKPOINT[1]}) {
+    @media (min-width : ${BREAKPOINTS.LG[0]}) {
         width : 40%;
     }
 `;
@@ -56,11 +56,11 @@ const Details = styled.div`
     flex   : 0 1 auto;
     margin : 0;
 
-    @media (max-width : ${BREAKPOINT[0]}) {
+    @media (max-width : ${BREAKPOINTS.SM[1]}) {
         margin-top : var(--contentMargin);
         width      : 100%;
     }
-    @media (min-width : ${BREAKPOINT[1]}) {
+    @media (min-width : ${BREAKPOINTS.LG[0]}) {
         width  : calc(60% - var(--contentMargin));
     }
 `;
