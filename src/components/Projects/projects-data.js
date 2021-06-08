@@ -28,7 +28,7 @@ export default [
         ]
     },
     {
-        title : "Playbook Documentation Site",
+        title : "Playbook",
         role  : "UI Engineering Lead / Engineer",
         description : "Led the development our in house code documentation site (Playbook) in order to provide engineers with implementation details, design and product with examples of production ready code.",
         screens : [
