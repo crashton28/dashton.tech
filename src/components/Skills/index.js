@@ -57,7 +57,7 @@ const Skill = styled.div`
 
 const Logo = styled.img`
     height       : 20px;
-    margin-right : 8;
+    margin-right : 8px;
     object-fit   : contain;
     width        : 20px;
 `;
