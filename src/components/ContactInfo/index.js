@@ -10,16 +10,16 @@ const Wrapper = styled(Section)`
     color           : #fff;
     display         : flex;
     justify-content : center;
-    padding         : 20 var(--contentMargin);
+    padding         : 20px var(--contentMargin);
     position        : relative;
     z-index         : 0;
 `;
 
 const StyledContent = styled(Content)`
-    align-items    : center;
-    display        : flex;
+    align-items     : center;
+    display         : flex;
     font-size       : 2rem;
-    flex-direction: row;
+    flex-direction  : row;
     justify-content : center;
 `;
 
@@ -27,9 +27,9 @@ const Link = styled.a`
     align-items     : center;
     color           : #fff;
     display         : flex;
-    margin          : 0 4;
+    margin          : 0 4px;
     text-decoration : none;
-    text-transform: uppercase;
+    text-transform  : uppercase;
     &:hover {
         text-decoration : underline;
     }

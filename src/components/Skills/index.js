@@ -26,11 +26,11 @@ const CategoryLabel = styled.div`
     display         : flex;
     font-size       : 1rem;
     font-weight     : 600;
-    height          : 24;
+    height          : 24px;
     line-height     : 1;
     justify-content : center;
-    margin          : 0 0 -12;
-    padding         : 0 12;
+    margin          : 0 0 -12px;
+    padding         : 0 12px;
     position        : relative;
     text-transform  : uppercase;
 `;
@@ -48,14 +48,14 @@ const CategorySkills = styled.div`
 const Skill = styled.div`
     align-items    : center;
     display        : flex;
-    margin         : 0 10 calc(var(--contentMargin) / 2);
+    margin         : 0 10px calc(var(--contentMargin) / 2);
 `;
 
 const Logo = styled.img`
-    height       : 20;
+    height       : 20px;
     margin-right : 8;
     object-fit   : contain;
-    width        : 20;
+    width        : 20px;
 `;
 
 const SkillLabel = styled.span`

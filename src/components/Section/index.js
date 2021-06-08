@@ -21,7 +21,7 @@ const InnerWrapper = styled.div`
 
 const Anchor = styled.a`
     position : relative;
-    top : -120;
+    top : -120px;
 `;
 
 const Section = (props) => {

@@ -4,9 +4,9 @@ import LogoImage from '../../assets/logo-da.svg';
 
 const LogoSVG = styled.svg`
     fill                : var(--colorPrimary);
-    margin-right        : 10;
-    height              : 40;
-    width               : 40;
+    margin-right        : 10px;
+    height              : 40px;
+    width               : 40px;
 `;
 
 const Logo = (props) => {

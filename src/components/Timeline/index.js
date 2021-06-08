@@ -22,11 +22,11 @@ const StyledContent = styled(Content)`
                 background : linear-gradient(to top, rgba(255,255,255,1), rgba(255,255,255,0));
                 content    : '';
                 display    : block;
-                height     : 60;
+                height     : 60px;
                 left       : -1;
                 position   : absolute;
                 bottom     : 0;
-                width      : 1;
+                width      : 1px;
             }
         }
     }
@@ -73,9 +73,9 @@ const Period = styled.div`
     color           : #fff;
     display         : inline-flex;
     font-size       : 1rem;
-    height          : 24;
+    height          : 24px;
     justify-content : flex-end;
-    padding         : 0 12 0 0;
+    padding         : 0 12px 0 0;
     position        : relative;
     z-index         : 2;
     @media (max-width : ${BREAKPOINTS.SM[1]}) {
@@ -90,9 +90,9 @@ const Period = styled.div`
             background    : #fff;
             border-radius : 50%;
             content       : '';
-            height        : 11;
-            margin        : 6 calc(var(--contentMargin) - 6px) 7 6;
-            width         : 11;
+            height        : 11px;
+            margin        : 6px calc(var(--contentMargin) - 5px) 7px 6px;
+            width         : 11px;
         }
     }
     @media (min-width: ${BREAKPOINTS.XL[0]}) {
@@ -111,12 +111,12 @@ const Date = styled.div`
       text-transform : uppercase;
     & + &:before {
         content : '-';
-        margin  : 0 4;
+        margin  : 0 4px;
     }
 `;
 
 const Month = styled.span`
-    margin-right   : 4;
+    margin-right : 4px;
 `;
 
 const Year = styled.span`
@@ -131,7 +131,7 @@ const Title = styled.h2`
     font-size       : 1.8rem;
     font-weight     : 600;
     justify-content : center;
-    margin          : 20 0;
+    margin          : 20px 0;
 `;
 
 const Description = styled.p`
@@ -141,7 +141,7 @@ const Description = styled.p`
 `;
 
 const Positions = styled.div`
-    margin-top : 20;
+    margin-top : 20px;
 `;
 
 const Position = styled.div`
@@ -159,11 +159,11 @@ const Position = styled.div`
             border-radius : 50%;
             content       : '';
             display       : block;
-            height        : 11;
+            height        : 11px;
             left          : calc((var(--contentMargin) + 6px) * -1);
             position      : absolute;
-            top           : 6;
-            width         : 11;
+            top           : 6px;
+            width         : 11px;
         }
     }
     @media (min-width: ${BREAKPOINTS.XL[0]}) {
@@ -176,15 +176,15 @@ const Position = styled.div`
 
 const PositionPeriod = styled.span`
     font-weight  : 700;
-    margin-right : 10;
+    margin-right : 10px;
 `;
 const PositionTitle = styled.div`
 
 `;
 const PositionDesc = styled.p`
     color         : var(--colorSecondary);
-    margin-top    : 10;
-    margin-bottom : 10;
+    margin-top    : 10px;
+    margin-bottom : 10px;
 `;
 
 const getYear = (date) => {

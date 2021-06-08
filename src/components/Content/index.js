@@ -3,9 +3,9 @@ import styled from '@emotion/styled';
 import { BREAKPOINTS } from '../../constants';
 
 const Wrapper = styled.div`
-    padding : 0;
-    margin : 0 auto;
-    max-width: 800px;
+    padding   : 0;
+    margin    : 0 auto;
+    max-width : 800px;
     @media (min-width : ${BREAKPOINTS.XL[0]}) {
         max-width : 56vw;
     }

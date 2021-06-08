@@ -17,7 +17,7 @@ const Content = styled.div`
     flex            : 1 1 auto;
     font-size       : 4vw;
     justify-content : center;
-    padding          : var(--contentMargin) 0;
+    padding         : var(--contentMargin) 0;
     @media (min-width: ${BREAKPOINTS.LG[0]}) {
         font-size : 2vw;
         position  : relative;
@@ -54,9 +54,9 @@ const BioImg = styled.img`
             background : var(--colorPrimary);
             bottom     : 0;
             content    : '';
-            left       : 10;
+            left       : 10px;
             position   : absolute;
-            width      : 4;
+            width      : 4px;
             top        : 0;
         }
     }
