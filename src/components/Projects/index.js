@@ -52,6 +52,21 @@ const Screen = styled.img`
     }
 `;
 
+const Video = styled.video`
+    border-radius   : 4px;
+    box-shadow      : 0 0 20px 10px rgba(0,0,0,.1);
+    flex            : 0 0 auto;
+    object-fit      : contain;
+    overflow        : hidden;
+
+    @media (max-width : ${BREAKPOINTS.SM[1]}) {
+        width : 100%;
+    }
+    @media (min-width : ${BREAKPOINTS.LG[0]}) {
+        width : 40%;
+    }
+`;
+
 const Details = styled.div`
     flex   : 0 1 auto;
     margin : 0;
@@ -91,7 +106,13 @@ const Projects = () => {
                                     <Role>{project.role}</Role>
                                     {project.description && <Description>{project.description}</Description>}
                                 </Details>
-                                <Screen src={project.screens[0].image} alt={project.screens[0].label} loading="lazy" />
+                                {project.video && (
+                                    <Video autoPlay loop muted playsInline>
+                                        <source src={project.video.webm} type="video/webm" />
+                                        <source src={project.video.mp4} type="video/mp4" />
+                                    </Video>
+                                )}
+                                {project.screens && <Screen src={project.screens[0].image} alt={project.screens[0].label} loading="lazy" />}
                             </StyledContent>
                         </Project>
                     )
