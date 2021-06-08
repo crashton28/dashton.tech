@@ -47,6 +47,7 @@ const BioImg = styled.img`
     display : none;
     @media (min-width: ${BREAKPOINTS.LG[0]}) {
         display    : block;
+        height     : intrinsic;
         object-fit : cover;
         position   : relative;
         width      : 50%;
