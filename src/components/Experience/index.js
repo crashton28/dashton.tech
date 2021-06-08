@@ -1,9 +1,15 @@
 import React from "react";
+import styled from '@emotion/styled';
 import jobsData from './experience-data';
 import orderBy from 'lodash/orderBy';
 import Section from '../Section';
 import Timeline from '../Timeline';
+import Resume from '../../assets/Dave-Ashton-Resume.pdf';
+import Button from '../Button';
 
+const Footer = styled.footer`
+    text-align: center;
+`;
 
 const Experience = () => {
     let orderedJobs = orderBy(jobsData, ['date.from'], ['desc','desc']);
@@ -29,6 +35,7 @@ const Experience = () => {
                     />
                 );
             })}
+            <Footer><Button href={Resume} target="_blank" rel="noopener">Download Resume</Button></Footer>
         </Section>
     );
 }

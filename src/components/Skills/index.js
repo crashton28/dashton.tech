@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import skillsData from "./skills-data";
 import Section from '../Section';
 import Content from '../Content';
+import Button from '../Button';
 import { BREAKPOINTS } from '../../constants';
 
 const StyledContent = styled(Content)``;
@@ -65,6 +66,11 @@ const SkillLabel = styled.span`
     color : var(--colorSecondary);
 `;
 
+const Footer = styled.footer`
+    margin-top : var(--contentMargin);
+    text-align : center;
+`;
+
 const Skills = () => {
     return (
         <Section name="skills" title="Skills">
@@ -87,6 +93,7 @@ const Skills = () => {
                 )
             })}
             </StyledContent>
+            <Footer><Button href="https://github.com/crashton28/dashton.tech" target="_blank" rel="noopener">View Portfolio on GitHub</Button></Footer>
         </Section>
     );
 }
