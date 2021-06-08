@@ -75,7 +75,7 @@ const Period = styled.div`
     font-size       : 1rem;
     height          : 24px;
     justify-content : flex-end;
-    padding         : 0 12px 0 0;
+    padding         : 0 20px 0 0;
     position        : relative;
     z-index         : 2;
     @media (max-width : ${BREAKPOINTS.SM[1]}) {

@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import skillsData from "./skills-data";
 import Section from '../Section';
 import Content from '../Content';
+import { BREAKPOINTS } from '../../constants';
 
 const StyledContent = styled(Content)``;
 
@@ -27,12 +28,14 @@ const CategoryLabel = styled.div`
     font-size       : 1rem;
     font-weight     : 600;
     height          : 24px;
-    line-height     : 1;
     justify-content : center;
     margin          : 0 0 -12px;
-    padding         : 0 12px;
+    padding         : 0 20px;
     position        : relative;
     text-transform  : uppercase;
+    @media (min-width : ${BREAKPOINTS.XL[0]}) {
+        height: 2vw;
+    }
 `;
 
 const CategorySkills = styled.div`
