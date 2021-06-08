@@ -8,16 +8,18 @@ import { BREAKPOINTS } from '../../constants';
 const Project = styled.section`
     margin  : 0 calc(var(--contentMargin) * -1);
     padding : var(--contentMargin);
+    h2 {
+        color : var(--colorPrimary);
+    }
     &:nth-of-type(odd) {
         background : linear-gradient(to bottom, #333, #292929);
         color      : #fff;
-        h2 {
-            color : var(--colorPrimary);
-        }
     }
     &:nth-of-type(even) {
-        background     : linear-gradient(to bottom, var(--colorPrimary), var(--colorPrimaryGrad));
-        color          : #fff;
+        background     : linear-gradient(to bottom, #fff, rgba(0,0,0,.1));
+        & img, & video {
+            box-shadow : none;
+        }
         @media (min-width : ${BREAKPOINTS.LG[0]}) {
             & > div {
                 flex-direction : row-reverse;
