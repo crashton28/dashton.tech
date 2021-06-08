@@ -74,7 +74,7 @@ const Skills = () => {
                             {cat.items.map((skill, idx) => {
                                 return(
                                     <Skill key={idx}>
-                                        <Logo src={skill.logo}/>
+                                        <Logo src={skill.logo} alt={skill.label} loading="lazy"/>
                                         <SkillLabel>{skill.label}</SkillLabel>
                                     </Skill>
                                 );

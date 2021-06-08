@@ -234,7 +234,7 @@ const Timeline = (props) => {
                     <Company>{props.company}</Company>
                     <Address>{props.address}</Address>
                 </div>
-                {props.logo && <LogoLocation src={props.logo} />}
+                {props.logo && <LogoLocation src={props.logo} alt={props.company} />}
             </Location>
             {props.title && <Title>{props.title}</Title>}
             {props.description && <Description>{props.description}</Description>}

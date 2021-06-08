@@ -91,7 +91,7 @@ const Projects = () => {
                                     <Role>{project.role}</Role>
                                     {project.description && <Description>{project.description}</Description>}
                                 </Details>
-                                <Screen src={project.screens[0].image} />
+                                <Screen src={project.screens[0].image} alt={project.screens[0].label} loading="lazy" />
                             </StyledContent>
                         </Project>
                     )

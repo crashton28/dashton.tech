@@ -37,7 +37,6 @@ const Link = styled.a`
 
 const LinkedIn = styled.img`
     height : 1em;
-    margin-left : 1em;
 `;
 
 
@@ -46,7 +45,7 @@ const ContactInfo = () => {
         <Wrapper name="contact">
             <StyledContent>
                 {/* <Link href="mailto:me@dashton.tech">me@dashton.tech</Link> */}
-                <Link href="https://www.linkedin.com/in/ashton-david" target="_blank"><LinkedIn src={LinkedInLogo} /></Link>
+                <Link href="https://www.linkedin.com/in/ashton-david" target="_blank" rel="noopener"><LinkedIn src={LinkedInLogo} alt="Linked In" loading="lazy" /></Link>
             </StyledContent>
         </Wrapper>
     )

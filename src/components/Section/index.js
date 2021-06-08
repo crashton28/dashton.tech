@@ -27,7 +27,7 @@ const Anchor = styled.a`
 const Section = (props) => {
     return(
         <Wrapper className={props.className}>
-            <Anchor id={props.name} />
+            {/* <Anchor id={props.name} /> */}
             {props.title && <SectionTitle name={props.name}>{props.title}</SectionTitle>}
             <InnerWrapper>
                 {props.children}
