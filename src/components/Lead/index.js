@@ -2,6 +2,7 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Logo from '../Logo';
 import { BREAKPOINTS } from '../../constants';
+import useProgressiveImg from '../../hooks/useProgressiveImg';
 
 const StyledSection = styled.div`
     align-items : stretch;
@@ -19,6 +20,7 @@ const Content = styled.div`
     padding         : var(--contentMargin) 0;
     @media (min-width: ${BREAKPOINTS.LG[0]}) {
         font-size : 2vw;
+        padding   : calc(var(--contentMargin) * 2) 0;
         position  : relative;
         &:before {
             background : linear-gradient(to bottom, var(--colorPrimary), var(--colorPrimaryGrad));
@@ -42,23 +44,27 @@ const Slogan = styled.div`
     }
 `;
 
-const BioImg = styled.img`
+const BioImgWrapper = styled.div`
     display : none;
     @media (min-width: ${BREAKPOINTS.LG[0]}) {
         display    : block;
-        height     : intrinsic;
-        object-fit : cover;
+        overflow   : hidden;
         position   : relative;
         width      : 50%;
-        &:before {
-            background : var(--colorPrimary);
-            bottom     : 0;
-            content    : '';
-            left       : 10px;
-            position   : absolute;
-            width      : 4px;
-            top        : 0;
-        }
+    }
+`;
+const BioImg = styled.img`
+    @media (min-width: ${BREAKPOINTS.LG[0]}) {
+        bottom     : 0;
+        filter     : ${props => props.blur ? "blur(20px)" : "none"};
+        height     : 100%;
+        left       : 0;
+        object-fit : cover;
+        position   : absolute;
+        right      : 0;
+        top        : 0;
+        transition : ${props => props.blur ? "none" : "filter 0.3s ease-out"};
+        width      : 100%;
     }
 `;
 
@@ -74,6 +80,10 @@ const Name = styled.span`
 `;
 
 const Lead = () => {
+    const [src, { blur }] = useProgressiveImg(
+        "https://res.cloudinary.com/crashton28/image/upload/v1623203472/dashton.tech/pics/biopic_loading_abmfkl.jpg",
+        "https://res.cloudinary.com/crashton28/image/upload/v1623200508/dashton.tech/pics/biopic_2x_imneow.jpg"
+    );
     return (
         <StyledSection name="lead" title="Lead">
             <Content>
@@ -84,7 +94,9 @@ const Lead = () => {
                     <Name>Dave Ashton</Name>
                 </Slogan>
             </Content>
-            <BioImg src="https://res.cloudinary.com/crashton28/image/upload/v1623200508/dashton.tech/pics/biopic_2x_imneow.jpg" alt="Dave Ashton"/>
+            <BioImgWrapper>
+                <BioImg src={src} blur={blur} alt="Dave Ashton"/>
+            </BioImgWrapper>
         </StyledSection>
     )
 }
