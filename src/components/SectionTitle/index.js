@@ -20,6 +20,6 @@ const SectionTitle = (props) => {
             <H2>{props.children}</H2>
         </Header>
     )
-}
+};
 
 export default SectionTitle;

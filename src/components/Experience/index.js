@@ -38,6 +38,6 @@ const Experience = () => {
             <Footer><Button href={Resume} target="_blank" rel="noopener">Download Resume</Button></Footer>
         </Section>
     );
-}
+};
 
 export default Experience;

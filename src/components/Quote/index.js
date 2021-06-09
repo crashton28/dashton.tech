@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from '@emotion/styled';
 
-
 const Wrapper = styled.div`
     background  : var(--colorPrimary);
     display         : flex;
@@ -49,6 +48,6 @@ const Quote = () => {
             </Blockquote>
         </Wrapper>
     )
-}
+};
 
 export default Quote;

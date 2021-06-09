@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
-import styled from '@emotion/styled';
 import { Global, css } from '@emotion/react';
 import { BREAKPOINTS } from './constants';
 import Bio from './components/Bio';
@@ -47,6 +46,6 @@ const App = () => {
             <ContactInfo />
         </>
     )
-}
+};
 
 ReactDOM.render(<App />, document.getElementById('app'));

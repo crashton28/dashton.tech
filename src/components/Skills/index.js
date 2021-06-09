@@ -96,6 +96,6 @@ const Skills = () => {
             <Footer><Button href="https://github.com/crashton28/dashton.tech" target="_blank" rel="noopener">View Portfolio on GitHub</Button></Footer>
         </Section>
     );
-}
+};
 
 export default Skills;

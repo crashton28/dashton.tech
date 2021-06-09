@@ -47,6 +47,6 @@ const ContactInfo = () => {
             </StyledContent>
         </Wrapper>
     )
-}
+};
 
 export default ContactInfo;

@@ -35,6 +35,6 @@ const Nav = () => {
             <NavLink href="#contact">Contact</NavLink>
         </Wrapper>
     )
-}
+};
 
 export default Nav;

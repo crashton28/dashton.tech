@@ -178,9 +178,9 @@ const PositionPeriod = styled.span`
     font-weight  : 700;
     margin-right : 10px;
 `;
-const PositionTitle = styled.div`
 
-`;
+const PositionTitle = styled.div``;
+
 const PositionDesc = styled.p`
     color         : var(--colorSecondary);
     margin-top    : 10px;

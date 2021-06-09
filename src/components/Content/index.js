@@ -13,6 +13,6 @@ const Wrapper = styled.div`
 
 const Content = (props) => {
     return <Wrapper className={props.className}>{props.children}</Wrapper>;
-}
+};
 
 export default Content;

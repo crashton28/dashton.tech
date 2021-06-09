@@ -54,6 +54,7 @@ const BioImgWrapper = styled.div`
         width      : 50%;
     }
 `;
+
 const BioImg = styled.img`
     @media (min-width: ${BREAKPOINTS.LG[0]}) {
         bottom     : 0;
@@ -100,6 +101,6 @@ const Lead = () => {
             </BioImgWrapper>
         </StyledSection>
     )
-}
+};
 
 export default Lead;
