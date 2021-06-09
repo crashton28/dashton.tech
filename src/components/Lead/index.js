@@ -47,6 +47,7 @@ const Slogan = styled.div`
 const BioImgWrapper = styled.div`
     display : none;
     @media (min-width: ${BREAKPOINTS.LG[0]}) {
+        background : #fff;
         display    : block;
         overflow   : hidden;
         position   : relative;
