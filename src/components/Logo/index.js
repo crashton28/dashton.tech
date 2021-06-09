@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import LogoImage from '../../assets/logo-da.svg';
 
 const LogoSVG = styled.svg`
     fill                : var(--colorPrimary);

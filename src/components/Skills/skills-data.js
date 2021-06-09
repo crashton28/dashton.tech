@@ -1,43 +1,22 @@
-import Emotion from '../../assets/skills/emotion.png';
-import Figma from '../../assets/skills/figma.svg';
-import GitHub from '../../assets/skills/github.svg';
-import GitLab from '../../assets/skills/gitlab.svg';
-import HTML from '../../assets/skills/html5.svg';
-import Illustrator from '../../assets/skills/illustrator.svg';
-import JavaScript from '../../assets/skills/js.svg';
-import Jest from '../../assets/skills/jest.svg';
-import JQuery from '../../assets/skills/jquery.svg';
-import MySQL from '../../assets/skills/mysql.svg';
-import NodeJS from '../../assets/skills/nodejs.svg';
-import Photoshop from '../../assets/skills/photoshop.svg';
-import PHP from '../../assets/skills/php.svg';
-import ReactLogo from '../../assets/skills/react.svg';
-import SassLogo from '../../assets/skills/sass.svg';
-import Sketch from '../../assets/skills/sketch.svg';
-import SnapLogo from '../../assets/skills/snapsvg.svg';
-import StyledComponents from '../../assets/skills/styled-components.png';
-import TestingLibrary from '../../assets/skills/testing-library.png';
-import VSCode from '../../assets/skills/visual-studio-code.svg';
-
 export default [
     {
         label  : 'Design',
         items : [
             {
                 label : 'Figma',
-                logo  : Figma
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200526/dashton.tech/skills/figma_grp4ni.svg'
             },
             {
                 label : 'Illustrator',
-                logo  : Illustrator
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200528/dashton.tech/skills/illustrator_pyqr7z.svg'
             },
             {
                 label : 'Photoshop',
-                logo  : Photoshop
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200531/dashton.tech/skills/photoshop_qre5ke.svg'
             },
             {
                 label : 'Sketch',
-                logo  : Sketch
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200532/dashton.tech/skills/sketch_ncngc3.svg'
             },
         ]
     },
@@ -46,67 +25,67 @@ export default [
         items : [
             {
                 label : 'Emotion',
-                logo  : Emotion
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200526/dashton.tech/skills/emotion_zwycu5.png'
             },
             {
                 label : 'GitHub',
-                logo  : GitHub
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200526/dashton.tech/skills/github_jd14ag.svg'
             },
             {
                 label : 'GitLab',
-                logo  : GitLab
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200526/dashton.tech/skills/gitlab_ks5dmf.svg'
             },
             {
                 label : 'HTML/CSS',
-                logo  : HTML
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200526/dashton.tech/skills/html5_hfy38a.svg'
             },
             {
                 label : 'JavaScript',
-                logo  : JavaScript
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200529/dashton.tech/skills/js_lit8bk.svg'
             },
             {
                 label : 'Jest',
-                logo  : Jest
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200528/dashton.tech/skills/jest_aldkpc.svg'
             },
             {
                 label : 'JQuery',
-                logo  : JQuery
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200529/dashton.tech/skills/jquery_ofyhue.svg'
             },
             {
                 label : 'MySQL',
-                logo  : MySQL
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200529/dashton.tech/skills/mysql_vchhca.svg'
             },
             {
                 label : 'NodeJS',
-                logo  : NodeJS
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200529/dashton.tech/skills/nodejs_h7ihz8.svg'
             },
             {
                 label : 'PHP',
-                logo  : PHP
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200531/dashton.tech/skills/php_n0lwiz.svg'
             },
             {
                 label : 'React',
-                logo  : ReactLogo
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200532/dashton.tech/skills/react_fjsbhg.svg'
             },
             {
                 label : 'Sass',
-                logo  : SassLogo
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200532/dashton.tech/skills/sass_ecajby.svg'
             },
             {
                 label : 'Snap.svg',
-                logo  : SnapLogo
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200532/dashton.tech/skills/snapsvg_orgfbw.svg'
             },
             {
                 label : 'Styled Components',
-                logo  : StyledComponents
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200533/dashton.tech/skills/styled-components_oqi8uq.png'
             },
             {
                 label : 'Testing Library',
-                logo  : TestingLibrary
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200534/dashton.tech/skills/testing-library_vvoynm.png'
             },
             {
                 label : 'VS Code',
-                logo  : VSCode
+                logo  : 'https://res.cloudinary.com/crashton28/image/upload/v1623200534/dashton.tech/skills/visual-studio-code_byyxqc.svg'
             },
         ]
     }

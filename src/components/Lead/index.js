@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from '@emotion/styled';
-import BioPic from '../../assets/biopic@2x.jpg';
 import Logo from '../Logo';
 import { BREAKPOINTS } from '../../constants';
 
@@ -85,7 +84,7 @@ const Lead = () => {
                     <Name>Dave Ashton</Name>
                 </Slogan>
             </Content>
-            <BioImg src={BioPic} alt="Dave Ashton"/>
+            <BioImg src="https://res.cloudinary.com/crashton28/image/upload/v1623200508/dashton.tech/pics/biopic_2x_imneow.jpg" alt="Dave Ashton"/>
         </StyledSection>
     )
 }

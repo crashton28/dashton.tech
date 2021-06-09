@@ -2,7 +2,6 @@ import React from 'react';
 import Section from '../Section';
 import Content from '../Content';
 import Timeline from '../Timeline';
-import MCTCLogo from '../../assets/experience/mcc.png';
 
 const Education = () => {
     return (
@@ -16,7 +15,7 @@ const Education = () => {
                     highlights  = {[
                         "Dean’s List: Fall ’98, Spring ’99",
                     ]}
-                    logo        = {MCTCLogo}
+                    logo        = "https://res.cloudinary.com/crashton28/image/upload/v1623200443/dashton.tech/logos/mcc_oi3u7d.png"
                     title       = "Associate Degree: Graphic Design (Multimedia Studies)"
                 />
             </Content>

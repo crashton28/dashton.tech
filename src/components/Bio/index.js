@@ -2,7 +2,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Section from '../Section';
 import Content from '../Content';
-import BioPic from '../../assets/biopic-avatar@2x.jpg';
 import { BREAKPOINTS } from '../../constants';
 
 const StyledContent = styled(Content)`
@@ -62,7 +61,7 @@ const Bio = () => {
         <Section name="bio">
             <StyledContent>
                 <Hello>
-                    <Pic src={BioPic}/>
+                    <Pic src="https://res.cloudinary.com/crashton28/image/upload/v1623200502/dashton.tech/pics/biopic-avatar_2x_ehwsd5.jpg"/>
                     <div>
                         <span>Hello, </span><span>I'm Dave!</span>
                     </div>

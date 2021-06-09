@@ -1,9 +1,3 @@
-import LogoHS from '../../assets/experience/hamiltonstandard.svg';
-import LogoMCC from '../../assets/experience/mcc.png';
-import LogoDEP from '../../assets/experience/logo-dep.png';
-import LogoInfotree from '../../assets/experience/logo-infotree.svg';
-import LogoDisney from '../../assets/experience/disney.svg';
-
 export default [
     {
         date : {
@@ -12,7 +6,7 @@ export default [
         employer : {
             name     : "Disney / ESPN",
             location : "Bristol, CT",
-            logo     : LogoDisney
+            logo     : "https://res.cloudinary.com/crashton28/image/upload/v1623200443/dashton.tech/logos/disney_nbjhzf.svg"
         },
         title       : "Manager, Front-End Development",
         description : "Throughout my career at the Walt Disney Company, I have collaborated closely with the product, design, and engineering teams to design and develop world class online products.",
@@ -100,7 +94,7 @@ export default [
         employer: {
             name     : "Infotree Web Services",
             location : "Windsor, CT",
-            logo     : LogoInfotree
+            logo     : "https://res.cloudinary.com/crashton28/image/upload/v1623200443/dashton.tech/logos/infotree_mr2rf7.svg"
         },
         title       : "Senior Web Designer / Developer",
         highlights : [

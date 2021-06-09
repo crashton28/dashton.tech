@@ -2,7 +2,6 @@ import React from 'react';
 import styled from '@emotion/styled';
 import Content from '../Content';
 import Section from '../Section';
-import LinkedInLogo from '../../assets/linkedin.svg';
 
 const Wrapper = styled(Section)`
     align-items     : center;
@@ -44,8 +43,7 @@ const ContactInfo = () => {
     return (
         <Wrapper name="contact">
             <StyledContent>
-                {/* <Link href="mailto:me@dashton.tech">me@dashton.tech</Link> */}
-                <Link href="https://www.linkedin.com/in/ashton-david" target="_blank" rel="noopener"><LinkedIn src={LinkedInLogo} alt="Linked In" loading="lazy" /></Link>
+                <Link href="https://www.linkedin.com/in/ashton-david" target="_blank" rel="noopener"><LinkedIn src="https://res.cloudinary.com/crashton28/image/upload/v1623201778/dashton.tech/logos/linkedin_sklrqo.svg" alt="Linked In" loading="lazy" /></Link>
             </StyledContent>
         </Wrapper>
     )
