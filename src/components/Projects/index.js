@@ -16,7 +16,7 @@ const Project = styled.section`
         color      : #fff;
     }
     &:nth-of-type(even) {
-        background     : linear-gradient(to bottom, #fff, rgba(0,0,0,.1));
+        background     : linear-gradient(to bottom, rgb(0, 0, 0,0), rgba(0, 0, 0, 0.05));
         & img, & video {
             box-shadow      : 0 0 8px 4px rgba(0,0,0,.03);
         }
