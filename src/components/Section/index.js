@@ -19,15 +19,15 @@ const InnerWrapper = styled.div`
     width  : 100%;
 `;
 
-// const Anchor = styled.a`
-//     position : relative;
-//     top : -120px;
-// `;
+const Anchor = styled.a`
+    position : relative;
+    top : -120px;
+`;
 
 const Section = (props) => {
     return(
         <Wrapper className={props.className}>
-            {/* <Anchor id={props.name} /> */}
+            <Anchor id={props.name} />
             {props.title && <SectionTitle name={props.name}>{props.title}</SectionTitle>}
             <InnerWrapper>
                 {props.children}

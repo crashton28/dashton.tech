@@ -98,7 +98,7 @@ const Description = styled.p`
 
 const Projects = () => {
     return (
-        <Section name="Projects" title="Highlights">
+        <Section name="highlights" title="Highlights">
                 {projectsData.map((project, idx) => {
                     return (
                         <Project key={idx}>

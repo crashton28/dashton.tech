@@ -8,6 +8,7 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import Projects from './components/Projects';
 import Lead from './components/Lead';
+import Header from './components/Header';
 import Skills from './components/Skills';
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
                     }
                 `}
             />
+            <Header />
             <Lead />
             <Bio />
             <Projects />
